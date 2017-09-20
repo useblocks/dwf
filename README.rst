@@ -7,6 +7,16 @@ easy way of writing and maintaining documentation inside small to mid-size softw
 Key audience for this kind of information are software engineers, who need to create, present and maintain
 documentations from the first requirements to the final test report.
 
+Limitations
+-----------
+
+The presented approach is very code centric and handles the documentation topic only.
+
+There are a lot of specialised tools, e.g. for architecture design, which are more suitable for the design process
+itself. But they may fail if it comes to the point of integration with other documents or supporting
+version control systems.
+
+
 
 Introduced tools and libraries
 ------------------------------
@@ -37,6 +47,7 @@ Diagram Painting
 ****************
 
 `Plantuml <http://plantuml.com/>`_
+
 
 
 
