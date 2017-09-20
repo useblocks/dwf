@@ -22,9 +22,9 @@ Architecture integration with `sphinx-plantuml <https://pypi.python.org/pypi/sph
 
 Program output documentation with `sphinx-programoutput <https://pythonhosted.org/sphinxcontrib-programoutput/>`_
 
-Presentation output with `sphinx-revealjs <https://pypi.python.org/pypi/sphinxjp.themes.revealjs/>`_
+Presentation layout with `sphinx-revealjs <https://pypi.python.org/pypi/sphinxjp.themes.revealjs/>`_
 
-Document code with `autodoc <http://www.sphinx-doc.org/en/stable/ext/autodoc.html>`_
+Code Documentation with `autodoc <http://www.sphinx-doc.org/en/stable/ext/autodoc.html>`_
 
 IDE
 ***
@@ -33,6 +33,10 @@ Code editor `pyCharm <https://www.jetbrains.com/pycharm/>`_
 
 `PlantUML integration <https://plugins.jetbrains.com/plugin/7017-plantuml-integration>`_
 
+Diagram Painting
+****************
+
+`Plantuml <http://plantuml.com/>`_
 
 
 
