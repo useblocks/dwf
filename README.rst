@@ -48,6 +48,10 @@ Diagram Painting
 
 `Plantuml <http://plantuml.com/>`_
 
+Cloud services
+**************
+
+Documentation hosting with `readthedocs.org <https://readthedocs.org>`_
 
 
 

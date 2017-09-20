@@ -1,0 +1,42 @@
+@startuml
+
+    skinparam backgroundColor transparent
+    skinparam arrowColor #ffffff
+    skinparam rectangleBackgroundColor #333
+    skinparam rectangleBorderColor #fff
+    skinparam rectangleAttributeFontColor #fff
+    skinparam rectangleFontColor #fff
+    skinparam databaseBackgroundColor #333
+    skinparam databaseBorderColor #fff
+    skinparam databaseAttributeFontColor #fff
+    skinparam databaseFontColor #fff
+    skinparam databaseFontSize 20
+
+
+    skinparam shadowing false
+
+    database "Documentation" as d
+
+    rectangle "Requirement" as r
+    rectangle "Specification" as s
+    rectangle "Implementation" as i
+    rectangle "Test cases" as t
+    rectangle "Test Reports" as tr
+    rectangle "Architecture" as a
+    rectangle "Risk analysis" as ra
+    rectangle "Technology analysis" as ta
+    rectangle "Meeting minutes" as mm
+
+
+    r --> d
+    s --> d
+    i --> d
+    t --> d
+
+    tr -right-> d
+    a -left-> d
+    ra -up-> d
+    ta -up-> d
+    mm -up-> d
+
+@enduml
