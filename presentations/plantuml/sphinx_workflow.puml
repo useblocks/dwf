@@ -1,0 +1,48 @@
+@startuml
+
+    skinparam backgroundColor transparent
+    skinparam arrowColor #ffffff
+    skinparam rectangleBackgroundColor #333
+    skinparam rectangleBorderColor #fff
+    skinparam rectangleAttributeFontColor #fff
+    skinparam rectangleFontColor #fff
+    skinparam databaseBackgroundColor #333
+    skinparam databaseBorderColor #fff
+    skinparam databaseAttributeFontColor #fff
+    skinparam databaseFontColor #fff
+    skinparam databaseFontSize 20
+    skinparam storageBackgroundColor #333
+    skinparam storageBorderColor #fff
+    skinparam storageAttributeFontColor #fff
+    skinparam storageFontColor #fff
+    skinparam shadowing false
+
+
+    database sphinx as s
+
+    rectangle doc_1.rst as doc_1
+    rectangle doc_2.rst as doc_2
+    rectangle code_file as cf
+    rectangle image_1 as i1
+    rectangle image_2 as i2
+    rectangle conf.py as conf
+
+    storage "HTML" as html
+    storage "PDF" as pdf
+    storage "EPUB" as epub
+    storage "JSON" as json
+    storage "LaTeX" as latex
+
+    doc_1 --> s
+    doc_2 --> s
+    i1 --> s
+    i2 --> s
+    cf -left-> s
+    conf -right-> s
+
+    s --> html
+    s --> pdf
+    s --> epub
+    s --> json
+    s --> latex
+@enduml

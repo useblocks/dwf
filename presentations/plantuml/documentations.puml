@@ -11,8 +11,6 @@
     skinparam databaseAttributeFontColor #fff
     skinparam databaseFontColor #fff
     skinparam databaseFontSize 20
-
-
     skinparam shadowing false
 
     database "Documentation" as d
