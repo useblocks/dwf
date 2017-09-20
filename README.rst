@@ -34,12 +34,12 @@ Program output documentation with `sphinx-programoutput <https://pythonhosted.or
 
 Presentation layout with `sphinx-revealjs <https://pypi.python.org/pypi/sphinxjp.themes.revealjs/>`_
 
-Code Documentation with `autodoc <http://www.sphinx-doc.org/en/stable/ext/autodoc.html>`_
+Code Documentation with `sphinx-autodoc <http://www.sphinx-doc.org/en/stable/ext/autodoc.html>`_
 
 IDE
 ***
 
-Code editor `pyCharm <https://www.jetbrains.com/pycharm/>`_
+Code editor IntelliJ / `pyCharm <https://www.jetbrains.com/pycharm/>`_
 
 `PlantUML integration <https://plugins.jetbrains.com/plugin/7017-plantuml-integration>`_
 
