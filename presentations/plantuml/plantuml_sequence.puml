@@ -1,0 +1,10 @@
+@startuml
+
+user --> server : send request
+server --> server: check request
+server --> database: ask for data
+database --> server: provide data
+server --> server: render data
+server --> user: send rendered data
+
+@enduml

@@ -1,0 +1,21 @@
+@startuml
+class user {
+    name
+    age
+    email
+    check_password()
+    send_email(message)
+}
+
+class domain
+class group
+class api_key
+class permission
+
+user --> domain
+user --> group
+user --> api_key
+user --> permission: 1:n
+group --> permission: 1:n
+
+@enduml

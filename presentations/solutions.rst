@@ -12,7 +12,7 @@
 
     .. revealjs:: Example
 
-            .. rv_code::
+            .. code-block:: rst
 
                 My code document
                 ================
@@ -27,7 +27,7 @@
                 Inheritance diagram
                 -------------------
 
-                .. inheritance-diagram:: my_package.my_module.my_class.my_func
+                .. inheritance-diagram:: my_package.my_module.my_class
 
                 Code example
                 ------------

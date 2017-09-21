@@ -19,7 +19,7 @@
 #
 import os
 import sys
-# sys.path.insert(0, os.path.abspath('.'))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "../examples"))
 
 
 # -- General configuration ------------------------------------------------
@@ -32,21 +32,35 @@ import sys
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = ['sphinxjp.themes.revealjs',
-              'sphinxcontrib.plantuml']
+              'sphinxcontrib.plantuml',
+              'sphinx.ext.autodoc',
+              'sphinx.ext.inheritance_diagram',
+              'sphinxcontrib.programoutput',
+              'sphinxcontrib.sadisp']
 
 
 # Adds custom css to remove some annoying revealjs layouts.
 def setup(app):
     if os.path.exists('_static/css/gw_custom.css'):
         app.add_stylesheet('css/gw_custom.css')
+
     else:
         print("Missing _static/css/gw_custom.css")
         sys.exit()
-
+    try:
+        app.add_stylesheet('css/pygments_vim.css')
+    except Exception:
+        pass
 
 # PLANTUML config
 cwd = os.getcwd()
 plantuml = 'java -jar %s' % os.path.join(cwd, "utils/plantuml.jar")
+plantuml = plantuml.split()
+
+# SADISPLAY config
+graphviz = 'dot -Tpng'.split()
+sadisplay_default_render = 'plantuml'
+
 
 # If we are running on windows, we need to manipulate the path,
 # otherwise plantuml will have problems.
@@ -154,7 +168,7 @@ html_sidebars = {
 # -- Options for HTMLHelp output ------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'groundworkdoc'
+htmlhelp_basename = 'documentationwithoutfrustrationdoc'
 
 
 # -- Options for LaTeX output ---------------------------------------------

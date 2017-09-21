@@ -1,3 +1,7 @@
+a.headerlink {
+    color: transparent !important;
+}
+
 /* IMAGE */
 .reveal section img {
     border: none;
@@ -38,4 +42,24 @@
     -webkit-transition: color 0.15s ease;
     -moz-transition: color 0.15s ease;
     transition: color 0.15s ease;
+}
+
+.reveal pre {
+    width: 100%;
+    box-shadow: none;
+    background: #3F3F3F;
+    padding: 10px;
+}
+
+.highlighttable {
+    margin: 0 20px 0 20px;
+    width: 100%;
+}
+
+td.code {
+    padding: 0;
+}
+
+.reveal table th, .reveal table td {
+    padding: 0;
 }

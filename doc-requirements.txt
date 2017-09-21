@@ -2,3 +2,5 @@ sphinx
 sphinxcontrib-plantuml
 sphinxcontrib-needs
 sphinxjp.themes.revealjs
+sphinxcontrib-sadisplay
+sphinxcontrib-programoutput

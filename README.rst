@@ -1,29 +1,24 @@
 Documentation Without Frustration (DWF)
 =======================================
-
 DWF is a collection of documentations, presentations and examples to introduce an
 easy way of writing and maintaining documentation inside small to mid-size software projects.
 
 Key audience for this kind of information are software engineers, who need to create, present and maintain
-documentations from the first requirements to the final test report.
+documentations from the first requirement to final deployment report.
 
 Limitations
 -----------
-
 The presented approach is very code centric and handles the documentation topic only.
 
 There are a lot of specialised tools, e.g. for architecture design, which are more suitable for the design process
 itself. But they may fail if it comes to the point of integration with other documents or supporting
 version control systems.
 
-
-
 Introduced tools and libraries
 ------------------------------
 
 Documentation
 *************
-
 Documentation generation with `sphinx <http://www.sphinx-doc.org/en/stable/>`_
 
 Requirements, Test case, ... management with `sphinx-needs <http://sphinxcontrib-needs.readthedocs.io/en/latest/>`_
@@ -45,12 +40,14 @@ Code editor IntelliJ / `pyCharm <https://www.jetbrains.com/pycharm/>`_
 
 Diagram Painting
 ****************
-
 `Plantuml <http://plantuml.com/>`_
+
+Database
+********
+DB Schema documentation with `sphinx-sadisplay <https://pypi.python.org/pypi/sphinxcontrib-sadisplay>`_
 
 Cloud services
 **************
-
 Documentation hosting with `readthedocs.org <https://readthedocs.org>`_
 
 
