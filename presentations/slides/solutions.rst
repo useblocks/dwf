@@ -5,10 +5,11 @@
 
         * Editable inside IDE (text, images, diagrams, everything!)
         * Text based files
-        * Stored and versioned beside the code
+        * Stored and version-controlled beside the code
         * Deeply linked with code (e.g. reuse of docstrings)
         * Focused on information and not on layout or design
 
+        
 
     .. revealjs:: Example
 
