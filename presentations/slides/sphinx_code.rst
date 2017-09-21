@@ -7,12 +7,12 @@
 
         .. rv_code::
 
-            .. literalinclude::  sphinx_code.rst
+            .. literalinclude::  slides/sphinx_code.rst
                 :language: rst
                 :lines: 3-10
                 :linenos:
 
-        .. literalinclude::  sphinx_code.rst
+        .. literalinclude::  slides/sphinx_code.rst
                 :language: rst
                 :lines: 3-10
                 :emphasize-lines: 1, 3-4

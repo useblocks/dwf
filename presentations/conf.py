@@ -36,7 +36,8 @@ extensions = ['sphinxjp.themes.revealjs',
               'sphinx.ext.autodoc',
               'sphinx.ext.inheritance_diagram',
               'sphinxcontrib.programoutput',
-              'sphinxcontrib.sadisp']
+              'sphinxcontrib.sadisp',
+              'sphinxcontrib.needs']
 
 
 # Adds custom css to remove some annoying revealjs layouts.
@@ -69,6 +70,12 @@ if os.name == "nt":
     plantuml = plantuml.replace("\\", "\\\\")
 
 plantuml_output_format = 'png'
+
+needs_types = [
+    dict(directive="story", title="User Story", prefix="US_", color="#BFD8D2", style="node"),
+    dict(directive="spec", title="Specification", prefix="SP_", color="#FEDCD2", style="node"),
+    dict(directive="test", title="Test Case", prefix="TC_", color="#DCB239", style="node")
+]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -106,7 +113,7 @@ language = None
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This patterns also effect to html_static_path and html_extra_path
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = ['slides', '_build', 'Thumbs.db', '.DS_Store']
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
