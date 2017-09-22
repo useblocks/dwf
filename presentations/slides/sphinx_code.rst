@@ -85,11 +85,8 @@
             .. sadisplay::
                 :module: dwf_db
 
-        .. sadisplay::
-            :module: dwf_db
+        .. image:: _static/sphinx_database.png
 
-        .. rv_small::
+        Sphinx documentation: `sphinxcontrib-sadisplay <https://pypi.python.org/pypi/sphinxcontrib-sadisplay>`_
 
-            Sphinx documentation: `sphinxcontrib-sadisplay <https://pypi.python.org/pypi/sphinxcontrib-sadisplay>`_
-
-            Standalone tool: `sadisplay <https://pypi.python.org/pypi/sadisplay>`_
+        Standalone tool: `sadisplay <https://pypi.python.org/pypi/sadisplay>`_

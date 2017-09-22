@@ -9,7 +9,7 @@
         * Deeply linked with code (e.g. reuse of docstrings)
         * Focused on information and not on layout or design
 
-        
+
 
     .. revealjs:: Example
 
