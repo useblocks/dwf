@@ -56,11 +56,6 @@ def setup(app):
 # PLANTUML config
 cwd = os.getcwd()
 plantuml = 'java -jar %s' % os.path.join(cwd, "utils/plantuml.jar")
-plantuml = plantuml.split()
-
-# SADISPLAY config
-graphviz = 'dot -Tpng'.split()
-sadisplay_default_render = 'plantuml'
 
 
 # If we are running on windows, we need to manipulate the path,
@@ -69,6 +64,7 @@ if os.name == "nt":
     plantuml = plantuml.replace("/", "\\")
     plantuml = plantuml.replace("\\", "\\\\")
 
+plantuml = plantuml.split()  # split needed for sadisplay
 plantuml_output_format = 'png'
 
 needs_types = [
@@ -76,6 +72,10 @@ needs_types = [
     dict(directive="spec", title="Specification", prefix="SP_", color="#FEDCD2", style="node"),
     dict(directive="test", title="Test Case", prefix="TC_", color="#DCB239", style="node")
 ]
+
+# SADISPLAY config
+graphviz = 'dot -Tpng'.split()
+sadisplay_default_render = 'plantuml'
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
