@@ -1,13 +1,21 @@
 .. revealjs::
 
-    .. image:: _static/books.png
-        :height: 200px
+    .. revealjs::
 
-    Documentation without Frustration (DWF)
+        .. image:: _static/books.png
+            :height: 200px
 
-    .. rv_small::
+        Documentation without Frustration (DWF)
 
-        | Press **S** to open speaker notes view or **ESC** for slides overview.
-        |
-        | Presentation can be freely used for meetups and co.
-        | `dwf.readthedocs.io <https://dwf.readthedocs.io>`_
+        .. rv_small::
+
+            | Press **S** to open speaker notes view or **ESC** for slides overview.
+            |
+            | Presentation can be freely used for meetups and co.
+            | `dwf.readthedocs.io <https://dwf.readthedocs.io>`_
+
+    .. revealjs:: Why some common methods may be most welcome
+
+        .. image:: _static/xkcd_documents.png
+
+        xkcd: `Documents <https://xkcd.com/1459/>`_
