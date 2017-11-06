@@ -11,6 +11,7 @@ Documentation Without Frustration
 .. include:: slides/plantuml.rst
 .. include:: slides/pycharm.rst
 .. include:: slides/needs.rst
+.. include:: slides/cloud.rst
 .. include:: slides/thanks.rst
 
 
