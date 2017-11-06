@@ -1,21 +1,22 @@
 .. revealjs::
 
-    .. revealjs::
+    .. revealjs:: Documentation without Frustration (DWF)
 
         .. image:: _static/books.png
             :height: 200px
 
-        Documentation without Frustration (DWF)
+        ... or how to care about project documentation without losing motivation
+
 
         .. rv_small::
 
-            | Press **S** to open speaker notes view or **ESC** for slides overview.
+            | Written mainly for software developers and software team leads
             |
+            | Press **S** to open speaker notes view or **ESC** for slides overview.
             | Presentation can be freely used for meetups and co.
             | `dwf.readthedocs.io <https://dwf.readthedocs.io>`_
 
-    .. revealjs:: Why some common methods may be most welcome
+    .. revealjs::
 
-        .. image:: _static/xkcd_documents.png
+        .. image:: _static/documentation_diagram.png
 
-        xkcd: `Documents <https://xkcd.com/1459/>`_
