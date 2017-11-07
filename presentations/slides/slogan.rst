@@ -21,10 +21,14 @@
         .. image:: _static/documentation_diagram.png
 
 
-    .. revealjs:: TOC
+    .. revealjs:: What will be discussed...
 
-        #. Documentation
-        #. Frustration
-        #. Motivation
-        #. Tools
-        #. Cloud Services
+        What belongs to "Documentation"
+
+        Why writing documentation frustrates us
+
+        What is needed to keep motivation high enough
+
+        How Sphinx and PlantUML supports developers
+
+        What Cloud Services may save a lot of time

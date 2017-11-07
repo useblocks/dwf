@@ -2,19 +2,22 @@
 
     skinparam backgroundColor transparent
     skinparam arrowColor #ffffff
+
     skinparam rectangleBackgroundColor #333
-    skinparam rectangleBorderColor #fff
+    skinparam rectangleBorderColor #ffcc00
     skinparam rectangleAttributeFontColor #fff
     skinparam rectangleFontColor #fff
-    skinparam databaseBackgroundColor #333
-    skinparam databaseBorderColor #fff
+
+    skinparam databaseBackgroundColor #ffcc00
+    skinparam databaseBorderColor #000
     skinparam databaseAttributeFontColor #fff
-    skinparam databaseFontColor #fff
+    skinparam databaseFontColor #000
     skinparam databaseFontSize 20
-    skinparam storageBackgroundColor #333
-    skinparam storageBorderColor #fff
+
+    skinparam storageBackgroundColor #ffcc00
+    skinparam storageBorderColor #000
     skinparam storageAttributeFontColor #fff
-    skinparam storageFontColor #fff
+    skinparam storageFontColor #000
     skinparam shadowing false
 
 

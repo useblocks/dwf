@@ -1,0 +1,61 @@
+@startuml
+
+    skinparam backgroundColor transparent
+    skinparam arrowColor #ffffff
+'    skinparam handwritten true
+
+'    skinparam ArrowColor #ffcc00
+    skinparam rectangleBackgroundColor #333
+    skinparam rectangleBorderColor #fff
+    skinparam rectangleAttributeFontColor #fff
+    skinparam rectangleFontColor #fff
+    
+    skinparam databaseBackgroundColor #ffcc00
+    skinparam databaseBorderColor #000
+    skinparam databaseAttributeFontColor #fff
+    skinparam databaseFontColor #000
+    skinparam databaseFontSize 20
+    
+    skinparam fileBackgroundColor #ffcc00
+    skinparam fileBorderColor #000
+    skinparam fileAttributeFontColor #fff
+    skinparam fileFontColor #000
+    skinparam fileFontSize 20
+    
+    skinparam nodeBackgroundColor #ffcc00
+    skinparam nodeBorderColor #000
+    skinparam nodeAttributeFontColor #fff
+    skinparam nodeFontColor #000
+    skinparam nodeFontSize 20
+    
+    skinparam actorBackgroundColor #333
+    skinparam actorBorderColor #ffcc00
+    skinparam actorAttributeFontColor #fff
+    skinparam actorFontColor #ffcc00
+    skinparam actorFontSize 20
+    
+    skinparam cloudBackgroundColor #333
+    skinparam cloudBorderColor #fff
+    skinparam cloudAttributeFontColor #fff
+    skinparam cloudFontColor #fff
+    skinparam cloudFontSize 20
+    
+    skinparam shadowing false
+
+    actor Developer as dev
+    actor User as user
+
+    cloud "Cloud\nWhere the magic happens" {
+        database Store as store
+        node Build as build
+        node Deploy as deploy
+        file Host as host
+    }
+
+    dev -> store
+    store -> build
+    build -> deploy
+    deploy -> host
+    host -> user
+
+@enduml

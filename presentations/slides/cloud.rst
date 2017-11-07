@@ -1,6 +1,11 @@
 .. revealjs::
 
     .. revealjs:: Cloud Services
+
+        .. image:: _static/cloud.png
+
+
+    .. revealjs:: Cloud Services
         :subtitle: GitHub
 
         * Store code and files with git
