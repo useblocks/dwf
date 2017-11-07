@@ -3,6 +3,7 @@
 
     .. revealjs:: What belongs to documentation?
 
+        Nearly anything you can imagine
 
         .. image:: _static/documentations.png
 
