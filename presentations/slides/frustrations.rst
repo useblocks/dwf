@@ -15,5 +15,5 @@
         | **No synchronisation with existing code**
         | Frustration: Maintain same code / information at different locations
         |
-        | **No storage, versioning or deployment together with your code**
-        | Frustration: No reuse of existing development tool chain
+        | **No common storage, versioning or release for documentations and code**
+        | Frustration: Nothing is in sync
