@@ -73,6 +73,8 @@ needs_types = [
     dict(directive="test", title="Test Case", prefix="TC_", color="#DCB239", style="node")
 ]
 
+needs_css = "dark.css"
+
 # SADISPLAY config
 graphviz = 'dot -Tpng'.split()
 sadisplay_default_render = 'plantuml'

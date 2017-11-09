@@ -16,6 +16,14 @@
             | Presentation can be freely used for meetups and co.
             | `dwf.readthedocs.io <https://dwf.readthedocs.io>`_
 
+        .. rv_note::
+
+            Author: Daniel Woste <daniel@useblocks.com>
+
+            Copyright: `useblocks GmbH <http://useblocks.com>`_
+
+            License: `MIT <https://raw.githubusercontent.com/useblocks/dwf/master/LICENSE>`_
+
     .. revealjs::
 
         .. image:: _static/documentation_diagram.png
