@@ -19,10 +19,10 @@
         .. list-table::
             :header-rows: 1
 
-            * - Python
-              - groundwork
-              - Ethereum
-              - Sphinx
+            * - `Python <https://docs.python.org/3/>`_
+              - `groundwork <http://groundwork.readthedocs.io/en/latest/>`_
+              - `Ethereum <http://ethdocs.org/en/latest/>`_
+              - `Sphinx <http://www.sphinx-doc.org/en/stable/>`_
 
             * - .. image:: _static/sphinx_project_python.png
                     :width: 100%
