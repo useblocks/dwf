@@ -22,7 +22,7 @@
 
             Copyright: `useblocks GmbH <http://useblocks.com>`_
 
-            License: `MIT <https://raw.githubusercontent.com/useblocks/dwf/master/LICENSE>`_
+            License: `MIT <https://github.com/useblocks/dwf/blob/master/LICENSE>`_
 
     .. revealjs::
 
