@@ -1,9 +1,23 @@
 .. revealjs::
 
     .. revealjs:: Potential of Frustration
+        :subtitle: Your Team
+
+        .. image:: _static/team.png
+           :scale: 50%
+
+        Frontend - Backend - Infrastructure
+
+        .. rv_note::
+
+           Every needs to do document everything for his/her domain:
+           Arch, Bugs, User Manual, Ideas, Meeting minutes, ...
+
+    .. revealjs:: Potential of Frustration
         :subtitle: 1/2
 
         | **For each document type you may need a different tool**
+        | Frustration: Tool-KnowHow needed
         | Frustration: Context/tool switches during development
         |
         | **Most tools forces you to somehow "style" your information**

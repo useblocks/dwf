@@ -1,0 +1,56 @@
+@startuml
+
+    skinparam backgroundColor transparent
+    skinparam arrowColor #ffffff
+
+    skinparam rectangleBackgroundColor #333
+    skinparam rectangleBorderColor #ffcc00
+    skinparam rectangleAttributeFontColor #fff
+    skinparam rectangleFontColor #fff
+
+    skinparam databaseBackgroundColor #ffcc00
+    skinparam databaseBorderColor #000
+    skinparam databaseAttributeFontColor #fff
+    skinparam databaseFontColor #000
+    skinparam databaseFontSize 20
+
+    skinparam storageBackgroundColor #ffcc00
+    skinparam storageBorderColor #000
+    skinparam storageAttributeFontColor #fff
+    skinparam storageFontColor #000
+    skinparam shadowing false
+
+    skinparam defaultTextAlignment center
+
+
+    database IDE as i
+
+    rectangle HTML as html
+    rectangle Python as python
+    rectangle CSS as css
+    rectangle Java as java
+    rectangle Javascript as js
+    rectangle "**NEW**\nDocumentation code" as doc_data
+    rectangle Makefile as make
+
+    storage "Website" as web
+    storage "Database" as db
+    storage "App" as app
+    storage "Tests" as test
+    storage "**NEW**\nDocumentation" as doc
+
+    js --> i
+    html --> i
+    python --> i
+    css --> i
+    java --> i
+    doc_data -left-> i
+    make -right-> i
+
+    i --> web
+    i --> db
+    i --> app
+    i --> test
+    i --> doc
+
+@enduml

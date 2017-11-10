@@ -14,17 +14,21 @@
     skinparam databaseFontSize 20
     skinparam shadowing false
 
+    skinparam defaultTextAlignment center
+
     database "Documentation" as d
 
-    rectangle "Requirement" as r
-    rectangle "Specification" as s
-    rectangle "Implementation" as i
-    rectangle "Test cases" as t
-    rectangle "Test Reports" as tr
-    rectangle "Architecture" as a
-    rectangle "Risk analysis" as ra
-    rectangle "Technology analysis" as ta
-    rectangle "Meeting minutes" as mm
+
+    rectangle "**IBM DOORS**\nRequirement" as r #4A2213
+    rectangle "**Atlassian JIRA**\nSpecification" as s #10184A
+    rectangle "**Jetbrains IntelliJ**\nImplementation" as i #2B574F
+    rectangle "**HP Quality Center**\nTest cases" as t #104561
+    rectangle "**pytest**\nTest Reports" as tr #2E1061
+    rectangle "**Sparxsystem EA**\nArchitecture" as a #500E57
+    rectangle "**MS Word**\nRisk analysis" as ra #615C23
+    rectangle "**Confluence**\nTechnology analysis" as ta #236127
+    rectangle "**MS OneNote**\nMeeting minutes" as mm #611316
+
 
     r --> d
     s --> d

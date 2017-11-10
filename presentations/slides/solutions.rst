@@ -1,6 +1,12 @@
 .. revealjs::
 
     .. revealjs:: Documentation = Code
+        :subtitle: Integrated Development Environment
+
+        .. image:: _static/code_ide.png
+
+
+    .. revealjs:: Documentation = Code
         :subtitle: Same requirements for code and documentation
 
         * Editable inside IDE (text, images, diagrams, everything!)
