@@ -1,7 +1,7 @@
 .. revealjs::
 
     .. revealjs:: Potential of Frustration
-        :subtitle: Your Team
+        :subtitle: Team Setup Example
 
         .. image:: _static/team.png
            :scale: 50%
