@@ -5,7 +5,7 @@
         .. image:: _static/books.png
             :height: 200px
 
-        ... or how to care about project documentation without losing motivation
+        ... or how to get a software developer to write documentation.
 
 
         .. rv_small::

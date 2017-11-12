@@ -2,12 +2,14 @@
 
     .. revealjs:: Documentation = Code
         :subtitle: Integrated Development Environment
+        :data-background: #031908
 
         .. image:: _static/code_ide.png
 
 
     .. revealjs:: Documentation = Code
         :subtitle: Same requirements for code and documentation
+        :data-background: #031908
 
         * Editable inside IDE (text, images, diagrams, everything!)
         * Text based files
@@ -18,30 +20,31 @@
 
 
     .. revealjs:: Example
+        :data-background: #031908
 
-            .. code-block:: rst
+        .. code-block:: rst
 
-                My code document
-                ================
+            My code document
+            ================
 
-                This little piece of text describes the function :ref:`my_package.my_module.my_class.my_func`.
+            This little piece of text describes the function
+            :ref:`my_package.my_module.my_class.my_func`.
 
-                Docstring
-                ---------
+            Docstring
+            ---------
 
-                .. autofunction:: my_package.my_module.my_class.my_func
+            .. autofunction:: my_package.my_module.my_class.my_func
 
-                Inheritance diagram
-                -------------------
+            Inheritance diagram
+            -------------------
 
-                .. inheritance-diagram:: my_package.my_module.my_class
+            .. inheritance-diagram:: my_package.my_module.my_class
 
-                Code example
-                ------------
+            Code example
+            ------------
 
-                You can use the function like this::
+            You can use the function like this::
 
-                    from my_package.my_module import my_class
+                test_class = MyClass()
+                return_value = test_class.my_func(some_data)
 
-                    test_class = my_class()
-                    return_value = test_class.my_func(some_data)
