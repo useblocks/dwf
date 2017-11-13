@@ -39,4 +39,4 @@
 
         How Sphinx and PlantUML supports developers
 
-        What Cloud Services save a lot of time
+        Which Cloud Services save a lot of time
