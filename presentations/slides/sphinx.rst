@@ -20,20 +20,23 @@
             :header-rows: 1
 
             * - `Python <https://docs.python.org/3/>`_
-              - `groundwork <http://groundwork.readthedocs.io/en/latest/>`_
-              - `Ethereum <http://ethdocs.org/en/latest/>`_
               - `Sphinx <http://www.sphinx-doc.org/en/stable/>`_
+              - `Linux <https://www.kernel.org/doc/html/latest/>`_
+              - `Blender <https://docs.blender.org/manual/en/dev/>`_
+              - `Ethereum <http://ethdocs.org/en/latest/>`_
 
             * - .. image:: _static/sphinx_project_python.png
                     :width: 100%
-              - .. image:: _static/sphinx_project_groundwork.png
+              - .. image:: _static/sphinx_project_sphinx.png
+                    :width: 100%
+              - .. image:: _static/sphinx_project_linux.png
+                    :width: 100%
+              - .. image:: _static/sphinx_project_blender.png
                     :width: 100%
               - .. image:: _static/sphinx_project_ethereum.png
                     :width: 100%
-              - .. image:: _static/sphinx_project_sphinx.png
-                    :width: 100%
-
 
         `readthedocs.io <https://readthedocs.io>`_ : ~54k projects and ~65k users (2016)
 
         `pypi.org <https://pypi.org/search/?q=sphinx>`_ : ~250 extensions & themes for sphinx (2017)
+
