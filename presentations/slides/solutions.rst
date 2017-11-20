@@ -2,14 +2,12 @@
 
     .. revealjs:: Documentation = Code
         :subtitle: Integrated Development Environment
-        :data-background: #031908
 
         .. image:: _static/code_ide.png
 
 
     .. revealjs:: Documentation = Code
         :subtitle: Same requirements for code and documentation
-        :data-background: #031908
 
         * Editable inside IDE (text, images, diagrams, everything!)
         * Text based files
@@ -20,7 +18,6 @@
 
 
     .. revealjs:: Example
-        :data-background: #031908
 
         .. code-block:: rst
 

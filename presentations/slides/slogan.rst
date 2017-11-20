@@ -13,8 +13,13 @@
             | Written for software developers, software team leads and everybody who hates writing docs.
             |
             | Press **S** to open speaker notes view or **ESC** for slides overview.
-            | Presentation can be freely used for meetups and co.
+            | Presentation can be freely used, forked and changed for meetups and co.
             | `dwf.readthedocs.io <https://dwf.readthedocs.io>`_
+
+            .. image:: _static/creative_common.png
+                :target: http://creativecommons.org/licenses/by/4.0/
+
+
 
         .. rv_note::
 
@@ -22,7 +27,7 @@
 
             Copyright: `useblocks GmbH <http://useblocks.com>`_
 
-            License: `MIT <https://github.com/useblocks/dwf/blob/master/LICENSE>`_
+            License: Creative Common International 4.0 (presentation) & MIT (software)
 
     .. revealjs::
 

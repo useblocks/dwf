@@ -33,3 +33,7 @@
               - .. image:: _static/sphinx_project_sphinx.png
                     :width: 100%
 
+
+        `readthedocs.io <https://readthedocs.io>`_ : ~54k projects and ~65k users (2016)
+
+        `pypi.org <https://pypi.org/search/?q=sphinx>`_ : ~250 extensions & themes for sphinx (2017)
