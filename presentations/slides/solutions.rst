@@ -1,21 +1,27 @@
 .. revealjs::
 
-    .. revealjs:: Documentation = Code
-        :subtitle: Integrated Development Environment
+    .. revealjs:: Motivation Boosters
+        :subtitle: KISS
 
         .. image:: _static/code_ide.png
 
+        IDEs integrate different kinds of **inputs** to create multiple **outputs**
 
-    .. revealjs:: Documentation = Code
-        :subtitle: Same requirements for code and documentation
+        .. rv_small::
+
+            `KISS <https://en.wikipedia.org/wiki/KISS_principle>`_ = Keep It Short and Simple
+
+    .. revealjs:: Motivation Boosters
+        :subtitle: Documentation = Code
+
+        Same requirements for code and documentation
 
         * Editable inside IDE (text, images, diagrams, everything!)
         * Text based files
         * Stored and version-controlled beside the code
         * Deeply linked with code (e.g. reuse of docstrings)
         * Focused on information and not on layout or design
-
-
+        * Supports continuous integration / deployment
 
     .. revealjs:: Example
 
