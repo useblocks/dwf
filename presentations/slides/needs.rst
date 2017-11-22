@@ -4,6 +4,7 @@
 
         .. image:: _static/needs_logo_big.png
             :height: 300px
+            :class: needs_logo
 
         Extension to manage requirements, specifications or test cases
 

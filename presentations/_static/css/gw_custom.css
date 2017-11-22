@@ -63,3 +63,7 @@ td.code {
 .reveal table th, .reveal table td {
     padding: 0;
 }
+
+img.needs-logo {
+    background-color: #aaa !important;
+}
