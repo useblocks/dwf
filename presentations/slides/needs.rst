@@ -166,13 +166,13 @@
         .. rv_code::
 
             .. needimport:: needs.json
-               :id_prefix: imp_
+               :id_prefix: IMP_
                :version: 1.0
                :tags: imported
                :filter: "UST" in id
 
         .. needimport:: needs.json
-           :id_prefix: imp_
+           :id_prefix: IMP_
            :tags: imported
            :filter: id == "SP_001"
 

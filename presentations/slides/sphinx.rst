@@ -36,7 +36,7 @@
               - .. image:: _static/sphinx_project_ethereum.png
                     :width: 100%
 
-        `readthedocs.io <https://readthedocs.io>`_ : ~54k projects and ~65k users (2016)
+        `readthedocs.io <https://readthedocs.io>`_ : ~77k projects and ~103k users (2017)
 
-        `pypi.org <https://pypi.org/search/?q=sphinx>`_ : ~250 extensions & themes for sphinx (2017)
+        `pypi.org <https://pypi.org/search/?q=sphinx>`_ : ~379 extensions & themes for sphinx (2018)
 
