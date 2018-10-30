@@ -13,7 +13,7 @@
 
             Needed documentations depends most on application area (not team or customer).
 
-    .. revealjs:: What tools needs to be used for docs?
+    .. revealjs:: Which tools can to be used for docs?
 
         Nearly anything you can imagine
 
