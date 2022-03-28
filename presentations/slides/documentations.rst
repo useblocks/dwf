@@ -1,33 +1,29 @@
+What belongs to documentation?
+------------------------------
 
-.. revealjs::
+Nearly anything you can imagine
 
-    .. revealjs:: What belongs to documentation?
+.. image:: /_static/documentations.png
 
-        Nearly anything you can imagine
+... and much more.
 
-        .. image:: _static/documentations.png
+Which tools can to be used for docs?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-        ... and much more.
+Nearly anything you can imagine:
 
-        .. rv_note::
+.. image:: /_static/documentations_tools.png
 
-            Needed documentations depends most on application area (not team or customer).
+... and much more.
 
-    .. revealjs:: Which tools can to be used for docs?
+.. What if you only have a few developers in your team?
+   What if you need all of this? Maybe because of ISO 26262 for automotive sw
 
-        Nearly anything you can imagine
+Your turn!
+~~~~~~~~~~
+.. container:: story
 
-        .. image:: _static/documentations_tools.png
-
-        ... and much more.
-
-        .. rv_note::
-
-            What if you only have a few developers in your team?
-
-            What if you need all of this? Maybe because of ISO 26262 for automotive sw
-
-
+   How many tools do you weekly need to fulfill your work?
 
 
 

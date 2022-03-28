@@ -1,47 +1,42 @@
-.. revealjs::
+or how to get a software developer to write documentation
+---------------------------------------------------------
 
-    .. revealjs:: Documentation without Frustration (DWF)
+.. container:: small
 
-        .. image:: _static/books.png
-            :height: 200px
+   Written for software developers, software team leads and everybody who hates writing docs.
 
-        ... or how to get a software developer to write documentation.
+   Press **S** to open speaker notes view or **ESC** for slides overview.
 
+   Presentation can be freely used, forked and changed for meetups and co.
 
-        .. rv_small::
-
-            | Written for software developers, software team leads and everybody who hates writing docs.
-            |
-            | Press **S** to open speaker notes view or **ESC** for slides overview.
-            | Presentation can be freely used, forked and changed for meetups and co.
-            | `dwf.readthedocs.io <https://dwf.readthedocs.io>`_
-
-            .. image:: _static/creative_common.png
-                :target: http://creativecommons.org/licenses/by/4.0/
+   `dwf.readthedocs.io <https://dwf.readthedocs.io>`_
 
 
+.. image:: /_static/creative_common.png
+   :target: http://creativecommons.org/licenses/by/4.0/
 
-        .. rv_note::
+.. Author: Daniel Woste <daniel@useblocks.com>
+   Copyright: `useblocks GmbH <http://useblocks.com>`_
+   License: Creative Common International 4.0 (presentation) & MIT (software)
+   License: Creative Common International 4.0 (presentation) & MIT (software)
 
-            Author: Daniel Woste <daniel@useblocks.com>
+.. revealjs-break::
+   :notitle:
 
-            Copyright: `useblocks GmbH <http://useblocks.com>`_
-
-            License: Creative Common International 4.0 (presentation) & MIT (software)
-
-    .. revealjs::
-
-        .. image:: _static/documentation_diagram.png
+.. image:: /_static/documentation_diagram.png
 
 
-    .. revealjs:: What will be discussed...
+TOC
+~~~
 
-        What belongs to "Documentation"
+What will be discussed...
 
-        Why writing documentation frustrates us
+What belongs to "Documentation"
 
-        What is needed to keep motivation high enough
+Why writing documentation frustrates us
 
-        How Sphinx and PlantUML supports developers
+What is needed to keep motivation high enough
 
-        Which Cloud Services save a lot of time
+How Sphinx and PlantUML supports developers
+
+Which Cloud Services save a lot of time

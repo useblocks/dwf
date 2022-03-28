@@ -1,181 +1,186 @@
-.. revealjs::
+Sphinx-Needs
+------------
 
-    .. revealjs:: Sphinx-Needs
+.. image:: _static/needs_logo_big.png
+   :height: 300px
+   :class: needs_logo
 
-        .. image:: _static/needs_logo_big.png
-            :height: 300px
-            :class: needs_logo
+.. revealjs-break::
+   :notitle:
 
-        Extension to manage requirements, specifications or test cases
+Extension to manage requirements, specifications or test cases
 
-        Can be configured to support other types.
-        Like user stories, bugs, servers, ...
+Can be configured to support other types.
+Like user stories, bugs, servers, ...
 
-        Developed to support `ISO 26262 <https://en.wikipedia.org/wiki/ISO_26262>`_ inside Sphinx
+Developed to support `ISO 26262 <https://en.wikipedia.org/wiki/ISO_26262>`_ inside Sphinx
 
-        .. rv_small::
+.. container:: small
 
-            Sphinx Documentation: `Sphinx-needs <http://sphinxcontrib-needs.readthedocs.io/en/latest/>`_
+   Sphinx Documentation: `Sphinx-needs <http://sphinxcontrib-needs.readthedocs.io/en/latest/>`_
 
-    .. revealjs:: Sphinx-Needs
-        :subtitle: Need-Objects Code
+Need-Objects
+~~~~~~~~~~~~
 
-        .. rv_code::
+.. story:: As user I want to be able to use my email address for login
+  :id: US_001
+  :tags: user; login; email, security
 
-            .. story:: As user I want to be able to use my email address for login
-               :id: US_001
-               :tags: user; login; email, security
+  We need to use the unique email address for user login and verification
 
-               We need to use the unique email address for user login and verification
+  .. image:: /_static/needs_alice_bob..png
 
-               .. uml::
+.. spec:: Use flask-login for secure user verification and authorisation
+   :tags: user, security
+   :id: SP_001
+   :links: US_001
 
-                    object Alice
-                    object Bob
-                    Alice --> Bob
+Need-Objects Code
+~~~~~~~~~~~~~~~~~
 
-            .. spec:: Use flask-login for secure user verification and authorisation
-                :tags: user, security
-                :id: SP_001
-                :link: US_001
+.. code-block::
 
-        .. rv_small::
+   .. story:: As user I want to be able to use my email address for login
+      :id: US_001
+      :tags: user; login; email, security
 
-            Sphinx-Needs documentation: `need/ req (or any other defined need type) <http://sphinxcontrib-needs.readthedocs.io/en/latest/directives.html#need-req-or-any-other-defined-need-type>`_
+      We need to use the unique email address for user login and verification
 
-    .. revealjs:: Sphinx-Needs
-        :subtitle: Need-Objects Result
+      .. uml::
 
-        .. story:: As user I want to be able to use my email address for login
-           :id: US_001
-           :tags: user; login; email, security
+           object Alice
+           object Bob
+           Alice --> Bob
 
-           We need to use the unique email address for user login and verification
+   .. spec:: Use flask-login for secure user verification and authorisation
+       :tags: user, security
+       :id: SP_001
+       :link: US_001
 
-           .. image:: _static/needs_alice_bob..png
+.. container:: small
 
-        .. spec:: Use flask-login for secure user verification and authorisation
-               :tags: user, security
-               :id: SP_001
-               :links: US_001
+   Sphinx-Needs documentation: `need/ req (or any other defined need type) <http://sphinxcontrib-needs.readthedocs.io/en/latest/directives.html#need-req-or-any-other-defined-need-type>`_
 
-    .. revealjs:: Sphinx-Needs
-        :subtitle: Need-Objects Filtering
 
-        As list
 
-        .. rv_code::
+Need-Objects Filtering
+~~~~~~~~~~~~~~~~~~~~~~
 
-            .. needfilter::
-                :tags: security
+As list
 
-        .. needfilter::
-            :tags: security
+.. code-block::
 
-        .. rv_small::
+   .. needlist::
+      :tags: security
 
-            Sphinx-Needs documentation: `needfilter <http://sphinxcontrib-needs.readthedocs.io/en/latest/directives.html#needfilter>`_
+.. needlist::
+   :tags: security
 
-    .. revealjs:: Sphinx-Needs
-        :subtitle: Need-Objects Filtering with complex filter
+.. container:: small
 
-        As table
+   Sphinx-Needs documentation: `needfilter <http://sphinxcontrib-needs.readthedocs.io/en/latest/directives.html#needfilter>`_
 
-        .. rv_code::
+Need-Objects Filtering with complex filter
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-            .. needfilter::
-                :filter: id == "US_001" or "security" in tags
-                :layout: table
+As table
 
-        .. needfilter::
-            :filter: id == "US_001" or "security" in tags
-            :layout: table
+.. code-block::
 
-    .. revealjs:: Sphinx-Needs
-        :subtitle: Need-Objects Filtering with regex
+   .. needtable::
+      :filter: id == "US_001" or "security" in tags
+      :columns: id, title, outgoing
+      :layout: table
 
-        As diagram
+.. needtable::
+   :filter: id == "US_001" or "security" in tags
+   :columns: id, title, outgoing
+   :style: table
 
-        .. rv_code::
+Need-Objects Filtering with regex
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-            .. needfilter::
-                :filter: search("\w{5,}", title) and "security" in tags  # word with at least 5 chars inside title
-                :layout: diagram
+As diagram
 
-        .. image:: _static/need_diagram_filter.png
+.. code-block::
 
-    .. revealjs:: Sphinx-Needs
-        :subtitle: Export
+   .. needflow::
+      :filter: search("\w{5,}", title) and "security" in tags  # word with at least 5 chars inside title
 
-        .. rv_code::
+.. image:: /_static/need_diagram_filter.png
 
-            make needs
+Export
+~~~~~~
 
-        .. rv_code::
+.. code-block::
 
-            # File: _build/needs/needs.json
-            {
-                "created": "2017-09-21T20:40:49.090464",
-                "current_version": "1.0",
-                "project": "Documentation without Frustration",
-                "versions": {
-                    "1.0": {
-                        "created": "2017-09-21T20:40:49.090443",
-                        "needs": {
-                            "SP_001": {
-                                "description": "",
-                                "id": "SP_001",
-                                "links": [
-                                    "US_001"
-                                ],
-                                "status": null,
-                                "tags": [
-                                    "user"
-                                ],
-                                "title": "Use flask-login for secure user verification and authorisation",
-                                "type": "spec",
-                                "type_name": "Specification"
-                            },
-                            "US_001": {
-                                "description": "We need to use the unique email address for user login and verification\n\n.. uml::\n\n         @startuml\n         rectangle Alice\n         rectangle Bob\n         Alice -right-> Bob\n         @enduml",
-                                "id": "US_001",
-                                "links": [],
-                                "status": null,
-                                "tags": [
-                                    "user",
-                                    "login",
-                                    "email"
-                                ],
-                                "title": "As user I want to be able to use my email address for login",
-                                "type": "story",
-                                "type_name": "User Story"
-                            }
-                        },
-                        "needs_amount": 2
-                    }
-                }
-            }
+   make needs
 
-        .. rv_small::
+.. code-block::
 
-            Sphinx-Needs documentation: `Builders <http://sphinxcontrib-needs.readthedocs.io/en/latest/builders.html>`_
+   # File: _build/needs/needs.json
+   {
+       "created": "2017-09-21T20:40:49.090464",
+       "current_version": "1.0",
+       "project": "Documentation without Frustration",
+       "versions": {
+           "1.0": {
+               "created": "2017-09-21T20:40:49.090443",
+               "needs": {
+                   "SP_002": {
+                       "description": "",
+                       "id": "SP_001",
+                       "links": [
+                           "US_002"
+                       ],
+                       "status": null,
+                       "tags": [
+                           "user"
+                       ],
+                       "title": "Use flask-login for secure user verification and authorisation",
+                       "type": "spec",
+                       "type_name": "Specification"
+                   },
+                   "US_002": {
+                       "description": "We need to use the unique email address for user login and verification\n\n.. uml::\n\n         @startuml\n         rectangle Alice\n         rectangle Bob\n         Alice -right-> Bob\n         @enduml",
+                       "id": "US_002",
+                       "links": [],
+                       "status": null,
+                       "tags": [
+                           "user",
+                           "login",
+                           "email"
+                       ],
+                       "title": "As user I want to be able to use my email address for login",
+                       "type": "story",
+                       "type_name": "User Story"
+                   }
+               },
+               "needs_amount": 2
+           }
+       }
+   }
 
-    .. revealjs:: Sphinx-Needs
-        :subtitle: Import
+.. container:: small
 
-        .. rv_code::
+   Sphinx-Needs documentation: `Builders <http://sphinxcontrib-needs.readthedocs.io/en/latest/builders.html>`_
 
-            .. needimport:: needs.json
-               :id_prefix: IMP_
-               :version: 1.0
-               :tags: imported
-               :filter: "UST" in id
+Import
+~~~~~~
 
-        .. needimport:: needs.json
-           :id_prefix: IMP_
-           :tags: imported
-           :filter: id == "SP_001"
+.. code-block::
 
-        .. rv_small::
+   .. needimport:: /needs.json
+      :id_prefix: IMP_
+      :version: 1.0
+      :tags: imported
+      :filter: "SP" in id
 
-            Sphinx-Needs documentation: `needimport <http://sphinxcontrib-needs.readthedocs.io/en/latest/directives.html#needimport>`_
+.. needimport:: /needs.json
+  :id_prefix: IMP_
+  :tags: imported
+  :filter: "SP" in id
+
+.. container:: small
+
+   Sphinx-Needs documentation: `needimport <http://sphinxcontrib-needs.readthedocs.io/en/latest/directives.html#needimport>`_

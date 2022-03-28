@@ -1,39 +1,59 @@
-.. revealjs::
+Potential of Frustration
+------------------------
 
-    .. revealjs:: Potential of Frustration
-        :subtitle: Team Setup Example
+.. revealjs-section::
+   :data-background-iframe: _static/dynamic_background/colored_small_move.html
 
-        .. image:: _static/team.png
-           :scale: 40%
+Team Setup Example
+~~~~~~~~~~~~~~~~~~
 
-        Frontend - Backend - Infrastructure
+.. image:: /_static/team.png
+  :scale: 40%
 
-        .. rv_small::
+Frontend - Backend - Infrastructure
 
-            Each developer is responsible for the complete documentation of his/her domain.
+.. container:: small
 
-        .. rv_note::
+   Each developer is responsible for the complete documentation of his/her domain.
 
-           Every needs to do document everything for his/her domain:
-           Arch, Bugs, User Manual, Ideas, Meeting minutes, ...
+.. Every needs to do document everything for his/her domain:
 
-           No role like "requirement engineer", who writes requirements only.
+.. Arch, Bugs, User Manual, Ideas, Meeting minutes, ...
+   No role like "requirement engineer", who writes requirements only.
 
-    .. revealjs:: Potential of Frustration
-        :subtitle: 1/2
+Potential of Frustration 1/2
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**For each document type you may need a different tool**
 
-        | **For each document type you may need a different tool**
-        | Frustration: Tool-KnowHow needed
-        | Frustration: Context/tool switches during development
-        |
-        | **Most tools forces you to somehow "style" your information**
-        | Frustration: Spend time for not functional nor informative work
+.. container:: small
 
-    .. revealjs:: Potential of Frustration
-        :subtitle: 2/2
+   Frustration: Tool-KnowHow needed
 
-        | **No synchronisation with existing code**
-        | Frustration: Maintain same code / information at different locations
-        |
-        | **No common storage, versioning or release for documentations and code**
-        | Frustration: Nothing is in sync
+   Frustration: Context/tool switches during development
+
+**Most tools forces you to somehow "style" your information**
+
+.. container:: small
+
+   Frustration: Spend time for not functional nor informative work
+
+Potential of Frustration 2/2
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**No synchronisation with existing code**
+
+.. container:: small
+
+   Frustration: Maintain same code / information at different locations
+
+**No common storage, versioning or release for documentations and code**
+
+.. container:: small
+
+   Frustration: Nothing is in sync
+
+Your turn!
+~~~~~~~~~~
+.. container:: story
+
+   Tell your own story of why you avoid certain tools?

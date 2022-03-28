@@ -1,53 +1,57 @@
-.. revealjs::
+Motivation Boosters
+-------------------
 
-    .. revealjs:: Motivation Boosters
-        :subtitle: KISS
+KISS
+~~~~
 
-        .. image:: _static/code_ide.png
+.. image:: /_static/code_ide.png
 
-        IDEs integrate different kinds of **inputs** to create multiple **outputs**
+IDEs integrate different kinds of **inputs** to create multiple **outputs**
 
-        .. rv_small::
+.. container:: small
 
-            `KISS <https://en.wikipedia.org/wiki/KISS_principle>`_ = Keep It Short and Simple
+   `KISS <https://en.wikipedia.org/wiki/KISS_principle>`_ = Keep It Short and Simple
 
-    .. revealjs:: Motivation Boosters
-        :subtitle: Documentation = Code
+Documentation = Code
+~~~~~~~~~~~~~~~~~~~~
 
-        Same requirements for code and documentation
+Same requirements for code and documentation
 
-        * Editable inside IDE (text, images, diagrams, everything!)
-        * Text based files
-        * Stored and version-controlled beside the code
-        * Deeply linked with code (e.g. reuse of docstrings)
-        * Focused on information and not on layout or design
-        * Supports continuous integration / deployment
+.. container:: small
 
-    .. revealjs:: Example
+   * Editable inside IDE (text, images, diagrams, everything!)
+   * Text based files
+   * Stored and version-controlled beside the code
+   * Deeply linked with code (e.g. reuse of docstrings)
+   * Focused on information and not on layout or design
+   * Supports continuous integration / deployment
 
-        .. code-block:: rst
+Example
+~~~~~~~
 
-            My code document
-            ================
+.. code-block:: rst
 
-            This little piece of text describes the function
-            :ref:`my_package.my_module.my_class.my_func`.
+   My code document
+   ================
 
-            Docstring
-            ---------
+   This little piece of text describes the function
+   :ref:`my_package.my_module.my_class.my_func`.
 
-            .. autofunction:: my_package.my_module.my_class.my_func
+   Docstring
+   ---------
 
-            Inheritance diagram
-            -------------------
+   .. autofunction:: my_package.my_module.my_class.my_func
 
-            .. inheritance-diagram:: my_package.my_module.my_class
+   Inheritance diagram
+   -------------------
 
-            Code example
-            ------------
+   .. inheritance-diagram:: my_package.my_module.my_class
 
-            You can use the function like this::
+   Code example
+   ------------
 
-                test_class = MyClass()
-                return_value = test_class.my_func(some_data)
+   You can use the function like this::
+
+       test_class = MyClass()
+       return_value = test_class.my_func(some_data)
 

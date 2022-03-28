@@ -1,5 +1,12 @@
-Documentation Without Frustration
+.. This file is normally not used
+.. All presentations have their own, single rst file
+
+Documentation without Frustration
 =================================
+
+.. revealjs-section::
+   :data-background-iframe: _static/dynamic_background/white_small_move.html
+
 
 .. include:: slides/slogan.rst
 .. include:: slides/documentations.rst
@@ -9,21 +16,6 @@ Documentation Without Frustration
 .. include:: slides/sphinx_basics.rst
 .. include:: slides/sphinx_code.rst
 .. include:: slides/plantuml.rst
-.. include:: slides/pycharm.rst
 .. include:: slides/needs.rst
 .. include:: slides/cloud.rst
 .. include:: slides/thanks.rst
-
-
-
-
-
-
-
-
-
-
-
-
-
-

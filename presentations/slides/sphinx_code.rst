@@ -1,92 +1,94 @@
-.. revealjs::
+Working with existing code
+--------------------------
 
-    .. revealjs:: Working with existing code
-        :subtitle: 1/5
+Reuse existing code 1/5
+~~~~~~~~~~~~~~~~~~~~~~~
 
-        Reuse existing code
+.. code-block::
 
-        .. rv_code::
+   .. literalinclude::  /slides/sphinx_code.rst
+      :language: rst
+      :lines: 3-10
+      :linenos:
 
-            .. literalinclude::  slides/sphinx_code.rst
-                :language: rst
-                :lines: 3-10
-                :linenos:
+.. container:: small
 
-        .. literalinclude::  slides/sphinx_code.rst
-                :language: rst
-                :lines: 3-10
-                :emphasize-lines: 1, 3-4
-                :linenos:
+   Result:
 
-        .. rv_small::
+.. literalinclude::  /slides/sphinx_code.rst
+   :language: rst
+   :lines: 3-10
+   :emphasize-lines: 1, 3-4
+   :linenos:
 
-            Sphinx documentation: `Showing code examples <http://www.sphinx-doc.org/en/stable/markup/code.html>`_
+.. container:: small
 
-    .. revealjs:: Working with existing code
-        :subtitle: 2/5
-
-        Automated code documentation
-
-        .. rv_code::
-
-            .. autofunction:: os.path.join
-
-        .. autofunction:: os.path.join
-            :noindex:
-
-        .. rv_small::
-
-            Sphinx documentation: `Include documentation from docstrings <http://www.sphinx-doc.org/en/stable/ext/autodoc.html>`_
-
-    .. revealjs:: Working with existing code
-        :subtitle: 3/5
-
-        Inheritance diagrams
-
-        .. rv_code::
-
-            .. inheritance-diagram:: dwf.Dwf
-
-        .. inheritance-diagram:: dwf.Dwf
-            :parts:  1
+   Sphinx documentation: `Showing code examples <http://www.sphinx-doc.org/en/stable/markup/code.html>`_
 
 
-        Used code (examples/dwf/dwf.py):
+Automated code documentation 2/5
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. code-block:: rst
 
-        .. literalinclude::  ../examples/dwf/dwf.py
-                :language: python
+   .. autofunction:: os.path.join
 
-        .. rv_small::
+.. container:: small
 
-            Sphinx documentation: `Include inheritance diagrams <http://www.sphinx-doc.org/en/stable/ext/inheritance.html>`_
+   Result:
 
-    .. revealjs:: Working with existing code
-        :subtitle: 4/5
+.. autofunction:: os.path.join
+   :noindex:
 
-        Documenting program output
+.. container:: small
 
-        .. rv_code::
+   Sphinx documentation: `Include documentation from docstrings <http://www.sphinx-doc.org/en/stable/ext/autodoc.html>`_
 
-            .. command-output:: python -V
+Inheritance diagrams 3/5
+~~~~~~~~~~~~~~~~~~~~~~~~
+.. code-block:: rst
 
-        .. command-output:: python -V
+   .. inheritance-diagram:: dwf.Dwf
 
-        .. rv_small::
+.. inheritance-diagram:: dwf.Dwf
+   :parts:  1
 
-            Sphinx documentation: `sphinxcontrib.programoutput <http://sphinxcontrib-programoutput.readthedocs.io/en/latest/>`_
 
-    .. revealjs:: Working with existing code
-        :subtitle: 5/5
+Used code (examples/dwf/dwf.py):
 
-        Documenting database models
+.. literalinclude::  /../examples/dwf/dwf.py
+   :language: python
 
-        .. rv_code::
+.. container:: small
 
-            .. sadisplay::
-                :module: dwf_db
+   Sphinx documentation: `Include inheritance diagrams <http://www.sphinx-doc.org/en/stable/ext/inheritance.html>`_
 
-        .. image:: _static/sphinx_database.png
+Documenting program output 4/5
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. code-block:: rst
 
-        Sphinx documentation: `sphinxcontrib-sadisplay <https://pypi.python.org/pypi/sphinxcontrib-sadisplay>`_
+   .. command-output:: python -V
 
-        Standalone tool: `sadisplay <https://pypi.python.org/pypi/sadisplay>`_
+.. container:: small
+
+   Result:
+
+.. command-output:: python -V
+
+.. container:: small
+
+   Sphinx documentation: `sphinxcontrib.programoutput <http://sphinxcontrib-programoutput.readthedocs.io/en/latest/>`_
+
+Documenting database models 5/5
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. code-block::
+
+   .. sadisplay::
+      :module: dwf_db
+
+.. image:: /_static/sphinx_database.png
+
+.. container:: small
+
+   Sphinx documentation: `sphinxcontrib-sadisplay <https://pypi.python.org/pypi/sphinxcontrib-sadisplay>`_
+
+   Standalone tool: `sadisplay <https://pypi.python.org/pypi/sadisplay>`_

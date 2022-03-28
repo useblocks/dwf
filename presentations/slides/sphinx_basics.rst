@@ -1,103 +1,103 @@
-.. revealjs::
+Sphinx Basics
+-------------
+Text 1/4
+~~~~~~~~
 
-    .. revealjs:: Sphinx Basics
-        :subtitle: 1/4
+.. code-block:: rst
 
-        .. code-block:: rst
+   Sphinx Basics
+   =============
 
-            Sphinx Basics
-            =============
+   Text styles
+   ------------
+   **bold text**  *italic text*  ``code sample``
 
-            Text styles
-            ------------
-            **bold text**  *italic text*  ``code sample``
+   Links
+   -----
+   http://dwf.rtfd.io
 
-            Links
-            -----
-            http://dwf.rtfd.io
+   `Documentation without frustration <http://dwf.rtfd.io>`_
 
-            `Documentation without frustration <http://dwf.rtfd.io>`_
+.. container:: small
 
-        .. rv_small::
+   Sphinx documentation: `reStructuredText Primer <http://www.sphinx-doc.org/en/stable/rest.html>`_
 
-            Sphinx documentation: `reStructuredText Primer <http://www.sphinx-doc.org/en/stable/rest.html>`_
+Lists 2/4
+~~~~~~~~~
 
-    .. revealjs:: Sphinx Basics
-        :subtitle: 2/4
+.. code-block:: rst
 
-        .. code-block:: rst
+   Unsorted list
+   =============
 
-            Unsorted list
-            =============
+   * Item 1
+   * Item 2
 
-            * Item 1
-            * Item 2
+       * Item 2.1
 
-                * Item 2.1
+   * Item 2
 
-            * Item 2
+   Sorted list
+   ===========
 
-            Sorted list
-            ===========
+   #. Item 1
+   #. Item 2
 
-            #. Item 1
-            #. Item 2
+.. container:: small
 
-        .. rv_small::
+   Sphinx documentation: `reStructuredText Primer <http://www.sphinx-doc.org/en/stable/rest.html>`_
 
-            Sphinx documentation: `reStructuredText Primer <http://www.sphinx-doc.org/en/stable/rest.html>`_
+Images & Tables 3/4
+~~~~~~~~~~~~~~~~~~~
 
-    .. revealjs:: Sphinx Basics
-        :subtitle: 3/4
+.. code-block:: rst
 
-        .. code-block:: rst
+   Images
+   ======
 
-            Images
-            ======
+   .. image:: my_image.png
+      :scale: 50%
 
-            .. image:: my_image.png
-               :scale: 50%
+   Tables
+   ======
 
-            Tables
-            ======
+   =====  =====  =======
+   A      B      A and B
+   =====  =====  =======
+   False  False  False
+   True   False  False
+   False  True   False
+   True   True   True
+   =====  =====  =======
 
-            =====  =====  =======
-            A      B      A and B
-            =====  =====  =======
-            False  False  False
-            True   False  False
-            False  True   False
-            True   True   True
-            =====  =====  =======
+.. container:: small
 
-        .. rv_small::
+   Sphinx documentation: `reStructuredText Primer <http://www.sphinx-doc.org/en/stable/rest.html>`_
 
-            Sphinx documentation: `reStructuredText Primer <http://www.sphinx-doc.org/en/stable/rest.html>`_
+Code 4/4
+~~~~~~~~
 
-    .. revealjs:: Sphinx Basics
-        :subtitle: 4/4
+.. code-block:: rst
 
-        .. code-block:: rst
+   Source Code
+   ===========
+   Just use two of it::
 
-            Source Code
-            ===========
-            Just use two of it::
+       def func(me):
+           return me
 
-                def func(me):
-                    return me
+   Or for more details:
 
-            Or for more details:
+   .. code-block:: python
+       :linenos:
+       :emphasize-lines: 1,3
 
-            .. code-block:: python
-                :linenos:
-                :emphasize-lines: 1,3
+       def func(a, b):
+           c = a + b
+           return c
 
-                def func(a, b):
-                    c = a + b
-                    return c
+.. container:: small
 
-        .. rv_small::
-
-            Sphinx documentation: `Showing code examples <http://www.sphinx-doc.org/en/stable/markup/code.html>`_
+   Sphinx documentation: `Showing code examples <http://www.sphinx-doc.org/en/stable/markup/code.html>`_
 
 

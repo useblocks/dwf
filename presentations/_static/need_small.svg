@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="200"
+   height="100"
+   viewBox="0 0 52.916666 26.458333"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c4e8f9ed74, 2021-05-24)"
+   sodipodi:docname="need_small.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     width="200px"
+     units="px"
+     inkscape:zoom="3.2035073"
+     inkscape:cx="167.91792"
+     inkscape:cy="108.65362"
+     inkscape:window-width="2560"
+     inkscape:window-height="1388"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#999999;fill-opacity:0.49721646;stroke:#000000;stroke-width:0.264583;stroke-linejoin:round;stroke-opacity:0.548499;paint-order:fill markers stroke"
+       id="rect846"
+       width="52.674767"
+       height="13.6741"
+       x="0.19232996"
+       y="12.640002"
+       rx="0"
+       ry="0" />
+    <rect
+       style="fill:#999999;fill-opacity:0.497216;stroke:#000000;stroke-width:0.264583;stroke-linejoin:round;stroke-opacity:0.548499;paint-order:fill markers stroke"
+       id="rect846-8"
+       width="52.674767"
+       height="6.9112105"
+       x="0.19232996"
+       y="5.7287917"
+       rx="0"
+       ry="0" />
+    <rect
+       style="fill:#999999;fill-opacity:0.497216;stroke:#000000;stroke-width:0.264583;stroke-linejoin:round;stroke-opacity:0.548499;paint-order:fill markers stroke"
+       id="rect846-8-0"
+       width="52.674767"
+       height="5.7005625"
+       x="0.1923303"
+       y="0.028229164"
+       rx="0"
+       ry="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.69672px;line-height:0.95;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="1.3092359"
+       y="5.2205772"
+       id="text3078"
+       transform="scale(1.3456297,0.74314649)"><tspan
+         sodipodi:role="line"
+         id="tspan3076"
+         style="stroke-width:0.264583"
+         x="1.3092359"
+         y="5.2205772"><tspan
+   style="fill:#000000;fill-opacity:0.625498;stroke-width:0.264583"
+   id="tspan4686">REQ</tspan><tspan
+   style="fill:#000000;fill-opacity:0.592648;stroke-width:0.264583"
+   id="tspan5774">:</tspan> XYZ <tspan
+   style="fill:#0000df;fill-opacity:1;stroke-width:0.264583"
+   id="tspan3750">R001</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.78091px;line-height:0.8;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="1.5853206"
+       y="9.4940758"
+       id="text3078-9"
+       transform="scale(1.0832467,0.92315075)"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.27192px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+         sodipodi:role="line"
+         id="tspan33310"
+         x="1.5853206"
+         y="9.4940758">status: <tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold'"
+   id="tspan44925">open</tspan></tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.27192px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+         x="1.5853206"
+         y="12.518804"
+         id="tspan28574">author: <tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold'"
+   id="tspan49073">Mr. FooBar</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.78091px;line-height:0.8;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="26.96117"
+       y="9.3399734"
+       id="text3078-9-9"
+       transform="scale(1.0832467,0.92315075)"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.27192px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+         sodipodi:role="line"
+         id="tspan33310-3"
+         x="26.96117"
+         y="9.3399734">tags: <tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold'"
+   id="tspan47799">awesome</tspan></tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.27192px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+         x="26.96117"
+         y="12.364701"
+         id="tspan28574-6">links: <tspan
+   style="fill:#0000d6;fill-opacity:1"
+   id="tspan39123">R002, R002</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10.5833px;line-height:0.35;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:68.3429;stroke-width:0.449775"
+       x="4.3058906"
+       y="53.573658"
+       id="text7378"
+       transform="matrix(0.73536666,0,0,0.4705764,-1.7669947,-10.700205)"><tspan
+         x="4.3058906"
+         y="53.573658"
+         id="tspan50875"><tspan
+           style="font-size:2.82222px;-inkscape-font-specification:'sans-serif, Normal'"
+           id="tspan50873">Lorem ipsum dolor sit amet, consectetur </tspan></tspan><tspan
+         x="4.3058906"
+         y="57.935686"
+         id="tspan50879"><tspan
+           style="font-size:2.82222px;-inkscape-font-specification:'sans-serif, Normal'"
+           id="tspan50877">adipiscing elit, sed do eiusmod tempor </tspan></tspan><tspan
+         x="4.3058906"
+         y="62.297712"
+         id="tspan50883"><tspan
+           style="font-size:2.82222px;-inkscape-font-specification:'sans-serif, Normal'"
+           id="tspan50881">incididunt ut labore et dolore magna aliqua. Ut </tspan></tspan><tspan
+         x="4.3058906"
+         y="66.659738"
+         id="tspan50887"><tspan
+           style="font-size:2.82222px;-inkscape-font-specification:'sans-serif, Normal'"
+           id="tspan50885">enim ad minim veniam, quis nostrud </tspan></tspan><tspan
+         x="4.3058906"
+         y="71.021764"
+         id="tspan50891"><tspan
+           style="font-size:2.82222px;-inkscape-font-specification:'sans-serif, Normal'"
+           id="tspan50889">exercitation ullamco laboris nisi ut aliquip ex ea </tspan></tspan><tspan
+         x="4.3058906"
+         y="75.383794"
+         id="tspan50895"><tspan
+           style="font-size:2.82222px;-inkscape-font-specification:'sans-serif, Normal'"
+           id="tspan50893">commodo consequat. Duis aute irure dolor in </tspan></tspan></text>
+  </g>
+</svg>

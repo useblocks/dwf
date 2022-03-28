@@ -1,76 +1,73 @@
-.. revealjs::
+PlantUML
+--------
+Tool: `PlantUML <http://plantuml.com>`_
 
-    .. revealjs:: PlantUML
+Sphinx documentation: `sphinx-plantuml <https://pypi.python.org/pypi/sphinxcontrib-plantuml>`_
 
-        Tool: `PlantUML <http://plantuml.com>`_
+Class diagrams - Result
+~~~~~~~~~~~~~~~~~~~~~~~
 
-        Sphinx documentation: `sphinx-plantuml <https://pypi.python.org/pypi/sphinxcontrib-plantuml>`_
+.. image:: /_static/plantuml_class.png
 
-    .. revealjs:: PlantUML
-        :subtitle: Class diagrams - Result
+Class diagrams - Code
+~~~~~~~~~~~~~~~~~~~~~
 
-        .. image:: _static/plantuml_class.png
+.. code-block::
 
+    @startuml
+        class user {
+            name
+            age
+            email
+            check_password()
+            send_email(message)
+        }
 
+        class domain
+        class group
+        class api_key
+        class permission
 
-    .. revealjs:: PlantUML
-        :subtitle: Class diagrams - Code
+        user --> domain
+        user --> group
+        user --> api_key
+        user --> permission: 1:n
+        group --> permission: 1:n
+    @enduml
 
-        .. rv_code::
-            @startuml
-                class user {
-                    name
-                    age
-                    email
-                    check_password()
-                    send_email(message)
-                }
+.. container:: small
 
-                class domain
-                class group
-                class api_key
-                class permission
-
-                user --> domain
-                user --> group
-                user --> api_key
-                user --> permission: 1:n
-                group --> permission: 1:n
-            @enduml
-
-        .. rv_small::
-
-            PlantUML documentation: `Class diagram <http://plantuml.com/class-diagram>`_
+    PlantUML documentation: `Class diagram <http://plantuml.com/class-diagram>`_
 
 
-    .. revealjs:: PlantUML
-        :subtitle: Sequence diagrams - Result
+Sequence diagrams - Result
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-        .. image:: _static/plantuml_sequence.png
+.. image:: /_static/plantuml_sequence.png
 
-    .. revealjs:: PlantUML
-        :subtitle: Sequence diagrams - Code
+Sequence diagrams - Code
+~~~~~~~~~~~~~~~~~~~~~~~~
 
-        .. rv_code::
+.. code-block::
 
-            @startuml
-                user --> server : send request
-                server --> server: check request
-                server --> database: ask for data
-                database --> server: provide data
-                server --> server: render data
-                server --> user: send rendered data
-            @enduml
+    @startuml
+        user --> server : send request
+        server --> server: check request
+        server --> database: ask for data
+        database --> server: provide data
+        server --> server: render data
+        server --> user: send rendered data
+    @enduml
 
-        .. rv_small::
+.. container:: small
 
-            PlantUML documentation: `Sequence diagram <http://plantuml.com/sequence-diagram>`_
+    PlantUML documentation: `Sequence diagram <http://plantuml.com/sequence-diagram>`_
 
-    .. revealjs:: PlantUML
-        :subtitle: PyCharm Integration
+PyCharm Integration
+~~~~~~~~~~~~~~~~~~~
 
-        .. image:: _static/pycharm_plantuml.png
+.. image:: /_static/pycharm_plantuml.png
 
-        .. rv_small::
+.. container:: small
 
-            Plugin: `IntelliJ PlantUML Integration <https://plugins.jetbrains.com/plugin/7017-plantuml-integration>`_
+    Plugin: `IntelliJ PlantUML Integration <https://plugins.jetbrains.com/plugin/7017-plantuml-integration>`_
