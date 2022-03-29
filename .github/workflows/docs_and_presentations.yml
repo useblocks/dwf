@@ -25,6 +25,9 @@ jobs:
         with:
           fetch-depth: 0
           lfs: true
+      - name: Install system tools
+        run: |
+          sudo apt-get install graphviz -y
       # https://github.com/marketplace/actions/setup-python
       # ^-- This gives info on matrix testing.
       - name: Install Python
