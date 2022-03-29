@@ -86,7 +86,7 @@ jobs:
           contains(github.event_name, 'push')
         run: |
           set -x
-          rsync -a docs/_build/revealjs/ _gh-pages/
+          rsync -a presentations/_build/revealjs/ _gh-pages/
 
       # Add the .nojekyll file
       - name: nojekyll
