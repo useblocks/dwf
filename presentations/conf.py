@@ -78,6 +78,10 @@ revealjs_script_conf = """
 {
     controls: true,
     transition: 'slide',
+    progress: true,
+    history: true,
+    keyboard: true,
+    preloadIframes: true,
 }
 """
 
