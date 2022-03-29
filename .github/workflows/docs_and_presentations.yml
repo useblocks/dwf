@@ -63,7 +63,7 @@ jobs:
           pip list
           echo "ON_CI = $ON_CI"
 
-      # Build
+      # Build presentation
       - uses: ammaraskar/sphinx-problem-matcher@master
       - name: Build Sphinx presentations
         run: |
