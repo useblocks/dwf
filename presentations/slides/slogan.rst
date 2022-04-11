@@ -9,7 +9,7 @@ or how to get a software developer to write documentation
 
    Presentation can be freely used, forked and changed for meetups and co.
 
-   `dwf.readthedocs.io <https://dwf.readthedocs.io>`_
+   `useblocks.com/dwf <https://useblocks.com/dwf>`_
 
 
 .. image:: /_static/creative_common.png
