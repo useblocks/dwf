@@ -45,6 +45,18 @@ needs_types = [
     dict(directive="test", title="Test Case", prefix="TC_", color="#DCB239", style="node")
 ]
 
+needs_extra_options = ['linked_status']
+
+needs_services = {
+    'github-issues': {
+        'url': 'https://api.github.com/',
+        'need_type': 'spec',
+        'max_amount': 2,
+        'max_content_lines': 20,
+        'id_prefix': 'GH_ISSUE_'
+    }
+}
+
 
 
 needs_css = "modern.css"

@@ -1,5 +1,5 @@
-Cloud Services
---------------
+(Cloud) Services
+----------------
 
 .. image:: /_static/cloud.png
 
@@ -32,19 +32,17 @@ Read the docs
 
    Link: `readthedocs.org <https://readthedocs.org/>`_
 
-Travis
-~~~~~~
+Artifactory
+~~~~~~~~~~~
 
-* Continuous Integration system
-* Builds, tests and deploys nearly everything
-* Gets triggered by changes on github
-* Free for open-source projects
+* Archiving releases, binaries and co.
+* Multiple Archive types: PyPi, NPM, Generic
 
 |
 
 .. container:: small
 
-   Link: `travis-ci.org <https://travis-ci.org/>`_
+   Link: `Artifactory <https://jfrog.com/artifactory/>`_
 
 
 

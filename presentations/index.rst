@@ -17,5 +17,8 @@ Documentation without Frustration
 .. include:: slides/sphinx_code.rst
 .. include:: slides/plantuml.rst
 .. include:: slides/needs.rst
+.. include:: slides/needs_customization.rst
+.. include:: slides/needs_automation.rst
+.. include:: slides/needs_exchange.rst
 .. include:: slides/cloud.rst
 .. include:: slides/thanks.rst

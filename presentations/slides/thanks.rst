@@ -14,7 +14,7 @@ Thanks for your attention ...
    * - github
      - `github.com/useblocks/dwf <https://github.com/useblocks/dwf>`_
    * - This presentation
-     - `dwf.readthedocs.io <https://dwf.readthedocs.io>`_
+     - `useblocks.com/dwf <https://useblocks.com/dwf>`_
 
 Maintainer
 ~~~~~~~~~~

@@ -38,7 +38,14 @@ div.story {
 .reveal h1, .reveal h2, .reveal h3, .reveal p, .reveal div.line {
     text-shadow: 2px 2px black;
 }
-table.need td p, span.needs_data, span.needs_label, div.needs_meta div.line {
+table.need td p, span.needs_data, span.needs_label,
+div.needs_meta div.line,
+div.needs_meta_right div.line,
+div.needs_meta_left div.line,
+div.needs_head_left div.line,
+div.needs_footer_left span,
+div.needs_footer_right span,
+div.needs_side a{
     text-shadow: none;
 }
 
@@ -66,4 +73,8 @@ table.NEEDS_TABLE {
 
 table.needs_style_none {
     background-color: #aaa;
+}
+
+table.need code {
+    color: #ffffff;
 }
