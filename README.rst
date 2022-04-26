@@ -8,7 +8,7 @@ documentations from the first requirement to final deployment report.
 
 Presentation
 ------------
-Our complete DWF presentation can be found on: https://dwf.readthedocs.io
+Our complete DWF presentation can be found on: https://useblocks.com/dwf
 
 Limitations
 -----------
