@@ -101,7 +101,7 @@ External Needs
 Services
 ~~~~~~~~
 
-.. code-block:: rst
+.. code-block:: rest
 
    .. needservice:: github-issues
       :query: repo:useblocks/sphinxcontrib-needs state:closed needtable viewports
@@ -133,3 +133,29 @@ Supported targets:
    Documentation build, ``needs.json`` file
 
 `Sphinx-Needs Enterprise <https://useblocks.com/sphinx-needs-enterprise/>`_
+
+
+Sphinx-Needs API
+~~~~~~~~~~~~~~~~
+
+Open API, which can be accessed during build to:
+
+* Configure own types and options
+* Add needs (internal and external)
+* Add own warnings
+
+
+.. code-block:: python
+
+   for element in my_data:
+       section += add_need(
+           self.env.app, self.state, docname, self.lineno,
+           need_type="req", title=element["title"],
+           id=element["key"], content=element["description"])
+
+
+
+.. container:: small
+
+   | Sphinx-Needs documentation: `API <https://sphinxcontrib-needs.readthedocs.io/en/latest/api.html>`_
+   | Example integration: `Sphinx-Test-Reports <https://sphinx-test-reports.readthedocs.io/en/latest/>`_

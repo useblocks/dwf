@@ -98,5 +98,5 @@ ENV/
 # Doc zip container for pypi
 docs.zip
 
-
+github_images/
 _build/
