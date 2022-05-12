@@ -78,3 +78,10 @@ table.needs_style_none {
 table.need code {
     color: #ffffff;
 }
+
+
+span.need-part a.needs-id {
+    vertical-align: super;
+    font-size: 0.8em;
+
+}

@@ -109,3 +109,29 @@ As diagram
 
 .. image:: /_static/need_diagram_filter.png
 
+Other filter result types
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This presentation has :need_count:`status == "open"` open needs.
+
+.. code-block:: rst
+
+   This presentation has :need_count:`status == "open"` open needs.
+
+.. image:: /_static/need_sequence.svg
+   :scale: 30%
+
+.. image:: /_static/need_gantt.svg
+   :scale: 30%
+
+.. image:: /_static/need_bar.png
+   :scale: 30%
+
+
+.. container:: small
+
+   Docs: |
+   `need_count <https://sphinxcontrib-needs.readthedocs.io/en/latest/roles.html#need-count>`_ |
+   `needsequence <https://sphinxcontrib-needs.readthedocs.io/en/latest/directives/needsequence.html>`_ |
+   `needgantt <https://sphinxcontrib-needs.readthedocs.io/en/latest/directives/needgantt.html>`_ |
+   `needbar <https://sphinxcontrib-needs.readthedocs.io/en/latest/directives/needbar.html>`_

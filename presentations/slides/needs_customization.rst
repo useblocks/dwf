@@ -121,3 +121,4 @@ Styles
 .. container:: small
 
    | Sphinx-Needs: `Styles <https://sphinxcontrib-needs.readthedocs.io/en/latest/layout_styles.html#styles>`_
+   | Sphinx-Needs: `Table Row Styles <https://sphinxcontrib-needs.readthedocs.io/en/latest/directives/needtable.html#row-style-based-on-specific-need-value>`_
