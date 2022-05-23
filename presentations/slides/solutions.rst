@@ -1,6 +1,13 @@
 Motivation Boosters
 -------------------
 
+Who needs to be motivated?
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The content authors!
+
+.. image:: _static/authors.png
+
 KISS
 ~~~~
 

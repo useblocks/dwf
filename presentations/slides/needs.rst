@@ -1,7 +1,7 @@
 Sphinx-Needs
 ------------
 
-.. image:: _static/needs_logo_big.png
+.. image:: _static/sphinx-needs-logo-bg.svg
    :height: 300px
    :class: needs_logo
 
