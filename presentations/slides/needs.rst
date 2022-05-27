@@ -1,6 +1,9 @@
 Sphinx-Needs
 ------------
 
+.. revealjs-section::
+   :data-background-iframe: _static/dynamic_background/colored_small_move.html
+
 .. image:: _static/sphinx-needs-logo-bg.svg
    :height: 300px
    :class: needs_logo

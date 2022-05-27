@@ -85,3 +85,19 @@ span.need-part a.needs-id {
     font-size: 0.8em;
 
 }
+
+table.ub-list p,
+table.ub_provided p {
+    margin: 0.1em;
+}
+
+table.ub-list td,
+table.ub_provided td {
+    border-bottom: none;
+}
+
+table.ub-list td:first-child,
+table.ub_provided td:first-child {
+    text-align: right;
+}
+

@@ -29,8 +29,6 @@ or how to get a software developer to write documentation
 TOC
 ~~~
 
-What will be discussed...
-
 What belongs to "Documentation"
 
 Why writing documentation frustrates us
@@ -38,5 +36,9 @@ Why writing documentation frustrates us
 What is needed to keep motivation high enough
 
 How Sphinx and PlantUML supports developers
+
+Sphinx-Needs benefits and features
+
+Professional Services for companies
 
 Which Cloud Services save a lot of time

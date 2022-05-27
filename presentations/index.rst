@@ -22,5 +22,7 @@ Documentation without Frustration
 .. include:: slides/needs_automation.rst
 .. include:: slides/needs_exchange.rst
 .. include:: slides/performance.rst
+.. include:: slides/universe.rst
+.. include:: slides/support.rst
 .. include:: slides/cloud.rst
 .. include:: slides/thanks.rst
