@@ -1,0 +1,103 @@
+/*table.need {*/
+/*    color: red !important;*/
+/*}*/
+
+body {
+    background-image: url("background_2.png") !important;
+    background-color: #002b36 !important;
+    background-size: 100% 100% !important;
+    /* the following are for firefox 70 */
+	opacity:1;
+	z-index:1;
+}
+
+table.need {
+    margin-bottom: 10px;
+}
+
+div.needs_head a {
+    text-shadow: none;
+}
+div.needs_head span,
+span.needs_type_name {
+    text-shadow: none;
+}
+div.small {
+    font-size: 0.7em;
+}
+
+div.story {
+    color: #FFCC00
+}
+
+
+.reveal-viewport {
+    background: inherit;
+}
+
+.reveal h1, .reveal h2, .reveal h3, .reveal p, .reveal div.line {
+    text-shadow: 2px 2px black;
+}
+table.need td p, span.needs_data, span.needs_label,
+div.needs_meta div.line,
+div.needs_meta_right div.line,
+div.needs_meta_left div.line,
+div.needs_head_left div.line,
+div.needs_footer_left span,
+div.needs_footer_right span,
+div.needs_side a{
+    text-shadow: none;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+table.need tbody {
+  color: #333;
+  font-size: 0.7em;
+}
+
+img.needs_image {
+  margin: 0;
+}
+
+.reveal pre {
+	background: #333;
+	padding: 10px;
+}
+
+table.NEEDS_TABLE {
+	font-size: 0.7em;
+}
+
+table.needs_style_none {
+    background-color: #aaa;
+}
+
+table.need code {
+    color: #ffffff;
+}
+
+
+span.need-part a.needs-id {
+    vertical-align: super;
+    font-size: 0.8em;
+
+}
+
+table.ub-list p,
+table.ub_provided p {
+    margin: 0.1em;
+}
+
+table.ub-list td,
+table.ub_provided td {
+    border-bottom: none;
+}
+
+table.ub-list td:first-child,
+table.ub_provided td:first-child {
+    text-align: right;
+}
+

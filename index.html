@@ -1,0 +1,1839 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <title>Documentation without Frustration</title>
+    <link rel="stylesheet" type="text/css" href="_static/revealjs4/dist/reveal.css" />
+    <link rel="stylesheet" href="_static/revealjs4/dist/theme/moon.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="_static/assets/jsonview.bundle.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-needs/libs/html/datatables.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-needs/common.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-needs/modern.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-needs/layouts.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-needs/styles.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/assets/jsonview.bundle.js"></script>
+    <script src="_static/assets/jsonview_loader.js"></script>
+    <script src="_static/sphinx-needs/libs/html/datatables.min.js"></script>
+    <script src="_static/sphinx-needs/libs/html/datatables_loader.js"></script>
+    <script src="_static/sphinx-needs/libs/html/sphinx_needs_collapse.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    
+
+  </head><body>
+    <div class="reveal">
+        <div class="slides" role="main">
+            <aside class="notes">
+This file is normally not used</aside>
+<aside class="notes">
+All presentations have their own, single rst file</aside>
+<section data-background-iframe="_static/dynamic_background/white_small_move.html">
+<h1>Documentation without Frustration</h1>
+</section>
+<section>
+<section >
+<h2>or how to get a software developer to write documentation</h2>
+<div class="small docutils container">
+<p>Written for software developers, software team leads and everybody who hates writing docs.</p>
+<p>Press <strong>S</strong> to open speaker notes view or <strong>ESC</strong> for slides overview.</p>
+<p>Presentation can be freely used, forked and changed for meetups and co.</p>
+<p><a class="reference external" href="https://useblocks.com/dwf">useblocks.com/dwf</a></p>
+</div>
+<a class="reference external image-reference" href="http://creativecommons.org/licenses/by/4.0/"><img alt="_images/creative_common.png" src="_images/creative_common.png" /></a>
+<aside class="notes">
+Author: Daniel Woste &lt;daniel&#64;useblocks.com&gt;
+Copyright: `useblocks GmbH &lt;http://useblocks.com&gt;`_
+License: Creative Common International 4.0 (presentation) &amp; MIT (software)
+License: Creative Common International 4.0 (presentation) &amp; MIT (software)</aside>
+</section>
+<section >
+<img alt="_images/documentation_diagram.png" src="_images/documentation_diagram.png" />
+</section>
+<section >
+<h3>TOC</h3>
+<p>What belongs to “Documentation”</p>
+<p>Why writing documentation frustrates us</p>
+<p>What is needed to keep motivation high enough</p>
+<p>How Sphinx and PlantUML supports developers</p>
+<p>Sphinx-Needs benefits and features</p>
+<p>Professional Services for companies</p>
+<p>Which Cloud Services save a lot of time</p>
+</section>
+</section>
+<section>
+<section >
+<h2>What belongs to documentation?</h2>
+<p>Nearly anything you can imagine</p>
+<img alt="_images/documentations.png" src="_images/documentations.png" />
+<p>… and much more.</p>
+</section>
+<section >
+<h3>Which tools can to be used for docs?</h3>
+<p>Nearly anything you can imagine:</p>
+<img alt="_images/documentations_tools.png" src="_images/documentations_tools.png" />
+<p>… and much more.</p>
+<aside class="notes">
+What if you only have a few developers in your team?
+What if you need all of this? Maybe because of ISO 26262 for automotive sw</aside>
+</section>
+<section >
+<h3>Your turn!</h3>
+<div class="story docutils container">
+<p>How many tools do you weekly need to fulfill your work?</p>
+</div>
+</section>
+</section>
+<section>
+<section data-background-iframe="_static/dynamic_background/colored_small_move.html">
+<h2>Potential of Frustration</h2>
+</section>
+<section >
+<h3>Team Setup Example</h3>
+<a class="reference internal image-reference" href="_images/team.png"><img alt="_images/team.png" src="_images/team.png" style="width: 372.0px; height: 360.40000000000003px;" /></a>
+<p>Frontend - Backend - Infrastructure</p>
+<div class="small docutils container">
+<p>Each developer is responsible for the complete documentation of his/her domain.</p>
+</div>
+<aside class="notes">
+Every needs to do document everything for his/her domain:</aside>
+<aside class="notes">
+Arch, Bugs, User Manual, Ideas, Meeting minutes, ...
+No role like &quot;requirement engineer&quot;, who writes requirements only.</aside>
+</section>
+<section >
+<h3>Potential of Frustration 1/2</h3>
+<p><strong>For each document type you may need a different tool</strong></p>
+<div class="small docutils container">
+<p>Frustration: Tool-KnowHow needed</p>
+<p>Frustration: Context/tool switches during development</p>
+</div>
+<p><strong>Most tools forces you to somehow “style” your information</strong></p>
+<div class="small docutils container">
+<p>Frustration: Spend time for not functional nor informative work</p>
+</div>
+</section>
+<section >
+<h3>Potential of Frustration 2/2</h3>
+<p><strong>No synchronisation with existing code</strong></p>
+<div class="small docutils container">
+<p>Frustration: Maintain same code / information at different locations</p>
+</div>
+<p><strong>No common storage, versioning or release for documentations and code</strong></p>
+<div class="small docutils container">
+<p>Frustration: Nothing is in sync</p>
+</div>
+</section>
+<section >
+<h3>Your turn!</h3>
+<div class="story docutils container">
+<p>Tell your own story of why you avoid certain tools?</p>
+</div>
+</section>
+</section>
+<section>
+<section >
+<h2>Motivation Boosters</h2>
+</section>
+<section >
+<h3>Who needs to be motivated?</h3>
+<p>The content authors!</p>
+<img alt="_images/authors.png" src="_images/authors.png" />
+</section>
+<section >
+<h3>KISS</h3>
+<img alt="_images/code_ide.png" src="_images/code_ide.png" />
+<p>IDEs integrate different kinds of <strong>inputs</strong> to create multiple <strong>outputs</strong></p>
+<div class="small docutils container">
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/KISS_principle">KISS</a> = Keep It Short and Simple</p>
+</div>
+</section>
+<section >
+<h3>Documentation = Code</h3>
+<p>Same requirements for code and documentation</p>
+<div class="small docutils container">
+<ul class="simple">
+<li><p>Editable inside IDE (text, images, diagrams, everything!)</p></li>
+<li><p>Text based files</p></li>
+<li><p>Stored and version-controlled beside the code</p></li>
+<li><p>Deeply linked with code (e.g. reuse of docstrings)</p></li>
+<li><p>Focused on information and not on layout or design</p></li>
+<li><p>Supports continuous integration / deployment</p></li>
+</ul>
+</div>
+</section>
+<section >
+<h3>Example</h3>
+<pre data-id="example"><code data-trim data-noescape class="rst">My code document
+================
+
+This little piece of text describes the function
+:ref:`my_package.my_module.my_class.my_func`.
+
+Docstring
+---------
+
+.. autofunction:: my_package.my_module.my_class.my_func
+
+Inheritance diagram
+-------------------
+
+.. inheritance-diagram:: my_package.my_module.my_class
+
+Code example
+------------
+
+You can use the function like this::
+
+    test_class = MyClass()
+    return_value = test_class.my_func(some_data)</code></pre>
+</section>
+</section>
+<section>
+<section >
+<h2>Sphinx</h2>
+</section>
+<section >
+<h3>Documentation generator</h3>
+<p>Takes text and code files, generates …</p>
+<img alt="_images/sphinx_workflow.png" src="_images/sphinx_workflow.png" />
+<p><a class="reference external" href="http://www.sphinx-doc.org">Sphinx</a>,
+based on
+<a class="reference external" href="http://docutils.sourceforge.net/">docutils</a>
+and
+<a class="reference external" href="http://docutils.sourceforge.net/rst.html">restructuredText</a></p>
+</section>
+<section >
+<h3>Projects using Sphinx</h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference external" href="https://docs.python.org/3/">Python</a></p></th>
+<th class="head"><p><a class="reference external" href="http://www.sphinx-doc.org/en/stable/">Sphinx</a></p></th>
+<th class="head"><p><a class="reference external" href="https://www.kernel.org/doc/html/latest/">Linux</a></p></th>
+<th class="head"><p><a class="reference external" href="https://docs.blender.org/manual/en/dev/">Blender</a></p></th>
+<th class="head"><p><a class="reference external" href="http://ethdocs.org/en/latest/">Ethereum</a></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><a class="reference internal image-reference" href="_images/sphinx_project_python.png"><img alt="_images/sphinx_project_python.png" src="_images/sphinx_project_python.png" style="width: 100%;" /></a>
+</td>
+<td><a class="reference internal image-reference" href="_images/sphinx_project_sphinx.png"><img alt="_images/sphinx_project_sphinx.png" src="_images/sphinx_project_sphinx.png" style="width: 100%;" /></a>
+</td>
+<td><a class="reference internal image-reference" href="_images/sphinx_project_linux.png"><img alt="_images/sphinx_project_linux.png" src="_images/sphinx_project_linux.png" style="width: 100%;" /></a>
+</td>
+<td><a class="reference internal image-reference" href="_images/sphinx_project_blender.png"><img alt="_images/sphinx_project_blender.png" src="_images/sphinx_project_blender.png" style="width: 100%;" /></a>
+</td>
+<td><a class="reference internal image-reference" href="_images/sphinx_project_ethereum.png"><img alt="_images/sphinx_project_ethereum.png" src="_images/sphinx_project_ethereum.png" style="width: 100%;" /></a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><a class="reference external" href="https://readthedocs.io">readthedocs.io</a> : ~240k projects and ~430k users</p>
+<p><a class="reference external" href="https://pypi.org/search/?q=sphinx">pypi.org</a> : ~515 extensions &amp; themes for Sphinx</p>
+</section>
+</section>
+<section>
+<section >
+<h2>Sphinx Basics</h2>
+</section>
+<section >
+<h3>Text 1/4</h3>
+<pre data-id="text-1-4"><code data-trim data-noescape class="rst">Sphinx Basics
+=============
+
+Text styles
+------------
+**bold text**  *italic text*  ``code sample``
+
+Links
+-----
+http://dwf.rtfd.io
+
+`Documentation without frustration &lt;http://dwf.rtfd.io&gt;`_</code></pre>
+<div class="small docutils container">
+<p>Sphinx documentation: <a class="reference external" href="http://www.sphinx-doc.org/en/stable/rest.html">reStructuredText Primer</a></p>
+</div>
+</section>
+<section >
+<h3>Lists 2/4</h3>
+<pre data-id="lists-2-4"><code data-trim data-noescape class="rst">Unsorted list
+=============
+
+* Item 1
+* Item 2
+
+    * Item 2.1
+
+* Item 2
+
+Sorted list
+===========
+
+#. Item 1
+#. Item 2</code></pre>
+<div class="small docutils container">
+<p>Sphinx documentation: <a class="reference external" href="http://www.sphinx-doc.org/en/stable/rest.html">reStructuredText Primer</a></p>
+</div>
+</section>
+<section >
+<h3>Images &amp; Tables 3/4</h3>
+<pre data-id="images-tables-3-4"><code data-trim data-noescape class="rst">Images
+======
+
+.. image:: my_image.png
+   :scale: 50%
+
+Tables
+======
+
+=====  =====  =======
+A      B      A and B
+=====  =====  =======
+False  False  False
+True   False  False
+False  True   False
+True   True   True
+=====  =====  =======</code></pre>
+<div class="small docutils container">
+<p>Sphinx documentation: <a class="reference external" href="http://www.sphinx-doc.org/en/stable/rest.html">reStructuredText Primer</a></p>
+</div>
+</section>
+<section >
+<h3>Code 4/4</h3>
+<pre data-id="code-4-4"><code data-trim data-noescape class="rst">Source Code
+===========
+Just use two of it::
+
+    def func(me):
+        return me
+
+Or for more details:
+
+.. code-block:: python
+    :linenos:
+    :emphasize-lines: 1,3
+
+    def func(a, b):
+        c = a + b
+        return c</code></pre>
+<div class="small docutils container">
+<p>Sphinx documentation: <a class="reference external" href="http://www.sphinx-doc.org/en/stable/markup/code.html">Showing code examples</a></p>
+</div>
+</section>
+</section>
+<section>
+<section >
+<h2>Working with existing code</h2>
+</section>
+<section >
+<h3>Reuse existing code 1/5</h3>
+<pre data-id="reuse-existing-code-1-5"><code data-trim data-noescape class="default">.. literalinclude::  /slides/sphinx_code.rst
+   :language: rst
+   :lines: 3-10
+   :linenos:</code></pre>
+<div class="small docutils container">
+<p>Result:</p>
+</div>
+<pre data-id="reuse-existing-code-1-5"><code data-trim data-noescape class="rst" data-line-numbers>
+Reuse existing code 1/5
+~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block::
+
+   .. literalinclude::  /slides/sphinx_code.rst
+      :language: rst
+</code></pre>
+<div class="small docutils container">
+<p>Sphinx documentation: <a class="reference external" href="http://www.sphinx-doc.org/en/stable/markup/code.html">Showing code examples</a></p>
+</div>
+</section>
+<section >
+<h3>Automated code documentation 2/5</h3>
+<pre data-id="automated-code-documentation-2-5"><code data-trim data-noescape class="rst">.. autofunction:: os.path.join</code></pre>
+<div class="small docutils container">
+<p>Result:</p>
+</div>
+<dl class="py function">
+<dt class="sig sig-object py">
+<span class="sig-prename descclassname"><span class="pre">os.path.</span></span><span class="sig-name descname"><span class="pre">join</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">p</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Join two or more pathname components, inserting ‘/’ as needed.
+If any component is an absolute path, all previous path components
+will be discarded.  An empty last part will result in a path that
+ends with a separator.</p>
+</dd></dl>
+
+<div class="small docutils container">
+<p>Sphinx documentation: <a class="reference external" href="http://www.sphinx-doc.org/en/stable/ext/autodoc.html">Include documentation from docstrings</a></p>
+</div>
+</section>
+<section >
+<h3>Inheritance diagrams 3/5</h3>
+<pre data-id="inheritance-diagrams-3-5"><code data-trim data-noescape class="rst">.. inheritance-diagram:: dwf.Dwf</code></pre>
+<div class="graphviz"><img src="_images/inheritance-ba9300208c3b005a510538dabe718809951363e0.png" alt="Inheritance diagram of dwf.Dwf" class="inheritance graphviz" /></div>
+<p>Used code (examples/dwf/dwf.py):</p>
+<pre data-id="inheritance-diagrams-3-5"><code data-trim data-noescape class="python">class Tool: pass
+class Documentation(Tool): pass
+class Frustration(Tool): pass
+class Dwf(Documentation, Frustration, Tool): pass
+</code></pre>
+<div class="small docutils container">
+<p>Sphinx documentation: <a class="reference external" href="http://www.sphinx-doc.org/en/stable/ext/inheritance.html">Include inheritance diagrams</a></p>
+</div>
+</section>
+<section >
+<h3>Documenting program output 4/5</h3>
+<pre data-id="documenting-program-output-4-5"><code data-trim data-noescape class="rst">.. command-output:: python -V</code></pre>
+<div class="small docutils container">
+<p>Result:</p>
+</div>
+<pre data-id="documenting-program-output-4-5"><code data-trim data-noescape class="text">$ python -V
+Python 3.8.12</code></pre>
+<div class="small docutils container">
+<p>Sphinx documentation: <a class="reference external" href="http://sphinxcontrib-programoutput.readthedocs.io/en/latest/">sphinxcontrib.programoutput</a></p>
+</div>
+</section>
+<section >
+<h3>Documenting database models 5/5</h3>
+<pre data-id="documenting-database-models-5-5"><code data-trim data-noescape class="default">.. sadisplay::
+   :module: dwf_db</code></pre>
+<img alt="_images/sphinx_database.png" src="_images/sphinx_database.png" />
+<div class="small docutils container">
+<p>Sphinx documentation: <a class="reference external" href="https://pypi.python.org/pypi/sphinxcontrib-sadisplay">sphinxcontrib-sadisplay</a></p>
+<p>Standalone tool: <a class="reference external" href="https://pypi.python.org/pypi/sadisplay">sadisplay</a></p>
+</div>
+</section>
+</section>
+<section>
+<section >
+<h2>PlantUML</h2>
+<p>Tool: <a class="reference external" href="http://plantuml.com">PlantUML</a></p>
+<p>Sphinx documentation: <a class="reference external" href="https://pypi.python.org/pypi/sphinxcontrib-plantuml">sphinx-plantuml</a></p>
+</section>
+<section >
+<h3>Class diagrams - Result</h3>
+<img alt="_images/plantuml_class.png" src="_images/plantuml_class.png" />
+</section>
+<section >
+<h3>Class diagrams - Code</h3>
+<pre data-id="class-diagrams-code"><code data-trim data-noescape class="default">&#64;startuml
+    class user {
+        name
+        age
+        email
+        check_password()
+        send_email(message)
+    }
+
+    class domain
+    class group
+    class api_key
+    class permission
+
+    user --&gt; domain
+    user --&gt; group
+    user --&gt; api_key
+    user --&gt; permission: 1:n
+    group --&gt; permission: 1:n
+&#64;enduml</code></pre>
+<div class="small docutils container">
+<p>PlantUML documentation: <a class="reference external" href="http://plantuml.com/class-diagram">Class diagram</a></p>
+</div>
+</section>
+<section >
+<h3>Sequence diagrams - Result</h3>
+<img alt="_images/plantuml_sequence.png" src="_images/plantuml_sequence.png" />
+</section>
+<section >
+<h3>Sequence diagrams - Code</h3>
+<pre data-id="sequence-diagrams-code"><code data-trim data-noescape class="default">&#64;startuml
+    user --&gt; server : send request
+    server --&gt; server: check request
+    server --&gt; database: ask for data
+    database --&gt; server: provide data
+    server --&gt; server: render data
+    server --&gt; user: send rendered data
+&#64;enduml</code></pre>
+<div class="small docutils container">
+<p>PlantUML documentation: <a class="reference external" href="http://plantuml.com/sequence-diagram">Sequence diagram</a></p>
+</div>
+</section>
+<section >
+<h3>PyCharm Integration</h3>
+<img alt="_images/pycharm_plantuml.png" src="_images/pycharm_plantuml.png" />
+<div class="small docutils container">
+<p>Plugin: <a class="reference external" href="https://plugins.jetbrains.com/plugin/7017-plantuml-integration">IntelliJ PlantUML Integration</a></p>
+</div>
+</section>
+</section>
+<section>
+<section data-background-iframe="_static/dynamic_background/colored_small_move.html">
+<h2>Sphinx-Needs</h2>
+<a class="needs-logo reference internal image-reference" href="_images/sphinx-needs-logo-bg.svg"><img alt="_images/sphinx-needs-logo-bg.svg" class="needs-logo" height="300px" src="_images/sphinx-needs-logo-bg.svg" /></a>
+</section>
+<section >
+<p>Extension to manage requirements, specifications or test cases</p>
+<p>Can be configured to support other types.
+Like user stories, bugs, servers, …</p>
+<p>Developed to support <a class="reference external" href="https://en.wikipedia.org/wiki/ISO_26262">ISO 26262</a> inside Sphinx</p>
+<div class="small docutils container">
+<p>Sphinx Documentation: <a class="reference external" href="http://sphinxcontrib-needs.readthedocs.io/en/latest/">Sphinx-needs</a></p>
+</div>
+</section>
+<section >
+<h3>Need-Objects</h3>
+<table class="need needs_grid_simple needs_layout_clean rtd-exclude-wy-table no-sphinx-material-strip needs_style_none needs_type_story docutils align-default" id="US_001">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="need head row-odd"><td class="need head"><div class="needs_head line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">User Story</span></span>: </span><strong><span><span class="needs_title"><span class="needs_data">As user I want to be able to use my email address for login</span></span></span></strong><span> <span class="needs-id"><a class="reference internal" href="#US_001" title="US_001">US_001</a></span>  <span class="needs collapse" id="target__show__meta"><span class="needs collapsed"><span><img alt="_images/arrow-down-circle.svg" class="needs_image no-scaled-link" src="_images/arrow-down-circle.svg" width="17px" /></span></span><span class="needs visible"><span><img alt="_images/arrow-right-circle.svg" class="needs_image no-scaled-link" src="_images/arrow-right-circle.svg" width="17px" /></span></span></span> </span></div>
+</div>
+</td>
+</tr>
+<tr class="need meta row-even"><td class="need meta"><div class="needs_meta line-block">
+<div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">user</span><span class="needs_spacer">, </span><span class="needs_data">login</span><span class="needs_spacer">, </span><span class="needs_data">email</span><span class="needs_spacer">, </span><span class="needs_data">security</span></span></span></div>
+</span></span></div>
+<div class="line"><span><div class="line">links incoming: <span class="links"><span><a class="reference internal" href="#SP_001" title="US_001">SP_001</a>, <a class="reference internal" href="#IMP_SP_001" title="US_001">IMP_SP_001</a></span></span></div>
+</span></div>
+</div>
+</td>
+</tr>
+<tr class="need content row-odd"><td class="need content" colspan="1"><p>We need to use the unique email address for user login and verification</p>
+<img alt="_images/needs_alice_bob..png" src="_images/needs_alice_bob..png" />
+</td>
+</tr>
+</tbody>
+</table>
+<table class="need needs_grid_simple needs_layout_clean rtd-exclude-wy-table no-sphinx-material-strip needs_style_none needs_type_spec docutils align-default" id="SP_001">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="need head row-odd"><td class="need head"><div class="needs_head line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Specification</span></span>: </span><strong><span><span class="needs_title"><span class="needs_data">Use flask-login for secure user verification and authorisation</span></span></span></strong><span> <span class="needs-id"><a class="reference internal" href="#SP_001" title="SP_001">SP_001</a></span>  <span class="needs collapse" id="target__show__meta"><span class="needs collapsed"><span><img alt="_images/arrow-down-circle.svg" class="needs_image no-scaled-link" src="_images/arrow-down-circle.svg" width="17px" /></span></span><span class="needs visible"><span><img alt="_images/arrow-right-circle.svg" class="needs_image no-scaled-link" src="_images/arrow-right-circle.svg" width="17px" /></span></span></span> </span></div>
+</div>
+</td>
+</tr>
+<tr class="need meta row-even"><td class="need meta"><div class="needs_meta line-block">
+<div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">user</span><span class="needs_spacer">, </span><span class="needs_data">security</span></span></span></div>
+</span></span></div>
+<div class="line"><span><div class="line">links outgoing: <span class="links"><span><a class="reference internal" href="#US_001" title="SP_001">US_001</a></span></span></div>
+</span></div>
+</div>
+</td>
+</tr>
+<tr class="need content row-odd"><td class="need content" colspan="1"></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section >
+<h3>Need-Objects Code</h3>
+<pre data-id="need-objects-code"><code data-trim data-noescape class="default">.. story:: As user I want to be able to use my email address for login
+   :id: US_001
+   :tags: user; login; email, security
+
+   We need to use the unique email address for user login and verification
+
+   .. uml::
+
+        object Alice
+        object Bob
+        Alice --&gt; Bob
+
+.. spec:: Use flask-login for secure user verification and authorisation
+    :tags: user, security
+    :id: SP_001
+    :link: US_001</code></pre>
+<div class="small docutils container">
+<p>Sphinx-Needs documentation: <a class="reference external" href="http://sphinxcontrib-needs.readthedocs.io/en/latest/directives.html#need-req-or-any-other-defined-need-type">need/ req (or any other defined need type)</a></p>
+</div>
+</section>
+<section >
+<h3>Need-Objects Filtering</h3>
+<p>As list</p>
+<pre data-id="need-objects-filtering"><code data-trim data-noescape class="default">.. needlist::
+   :tags: security</code></pre>
+<div class="line-block" id="needlist-index-0">
+<div class="line"><a class="reference external" href="#US_001">US_001: As user I want to be able to use my email address for login</a></div>
+<div class="line"><a class="reference external" href="#SP_001">SP_001: Use flask-login for secure user verification and authorisation</a></div>
+</div>
+<div class="small docutils container">
+<p>Sphinx-Needs documentation: <a class="reference external" href="http://sphinxcontrib-needs.readthedocs.io/en/latest/directives.html#needfilter">needfilter</a></p>
+</div>
+</section>
+<section >
+<h3>Need-Objects Filtering with complex filter</h3>
+<p>As table</p>
+<pre data-id="need-objects-filtering-with-complex-filter"><code data-trim data-noescape class="default">.. needtable::
+   :filter: id == &quot;US_001&quot; or &quot;security&quot; in tags
+   :columns: id, title, outgoing
+   :layout: table</code></pre>
+<div class="needstable_wrapper docutils container" id="needtable-index-0">
+<table class="NEEDS_TABLE docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 60%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>ID</p></th>
+<th class="head"><p>Title</p></th>
+<th class="head"><p>Outgoing</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="need row-even"><td class="needs_id"><p><a class="reference external" href="#SP_001">SP_001</a></p></td>
+<td class="needs_title"><p>Use flask-login for secure user verification and authorisation</p></td>
+<td class="needs_links"><p><a class="reference external" href="#US_001">US_001</a></p></td>
+</tr>
+<tr class="need row-odd"><td class="needs_id"><p><a class="reference external" href="#US_001">US_001</a></p></td>
+<td class="needs_title"><p>As user I want to be able to use my email address for login</p></td>
+<td class="needs_links"><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section >
+<h3>Need-Objects Filtering with regex</h3>
+<p>As diagram</p>
+<pre data-id="need-objects-filtering-with-regex"><code data-trim data-noescape class="default">.. needflow::
+   :filter: search(&quot;\w{5,}&quot;, title) and &quot;security&quot; in tags  # word with at least 5 chars inside title</code></pre>
+<img alt="_images/need_diagram_filter.png" src="_images/need_diagram_filter.png" />
+</section>
+<section >
+<h3>Other filter result types</h3>
+<p>This presentation has 3 open needs.</p>
+<pre data-id="other-filter-result-types"><code data-trim data-noescape class="rst">This presentation has :need_count:`status == &quot;open&quot;` open needs.</code></pre>
+<a class="reference internal image-reference" href="_images/need_sequence.svg"><img alt="_images/need_sequence.svg" height="93" src="_images/need_sequence.svg" width="157" /></a>
+<a class="reference internal image-reference" href="_images/need_gantt.svg"><img alt="_images/need_gantt.svg" height="48" src="_images/need_gantt.svg" width="196" /></a>
+<a class="reference internal image-reference" href="_images/need_bar.png"><img alt="_images/need_bar.png" src="_images/need_bar.png" style="width: 192.0px; height: 144.0px;" /></a>
+<div class="small docutils container">
+<p>Docs: |
+<a class="reference external" href="https://sphinxcontrib-needs.readthedocs.io/en/latest/roles.html#need-count">need_count</a> |
+<a class="reference external" href="https://sphinxcontrib-needs.readthedocs.io/en/latest/directives/needsequence.html">needsequence</a> |
+<a class="reference external" href="https://sphinxcontrib-needs.readthedocs.io/en/latest/directives/needgantt.html">needgantt</a> |
+<a class="reference external" href="https://sphinxcontrib-needs.readthedocs.io/en/latest/directives/needbar.html">needbar</a></p>
+</div>
+</section>
+</section>
+<section>
+<section >
+<h2>Sphinx-Needs Structure</h2>
+</section>
+<section >
+<h3>Embedded needs 1/2</h3>
+<pre data-id="embedded-needs-1-2"><code data-trim data-noescape class="rst">.. story:: My parent story
+   :id: ST_PAR_001
+
+   This parent need contains the following need:
+
+   .. story:: My child story
+      :id: ST_CHIlD_001
+      :style: red_border
+
+      This is the child need.</code></pre>
+</section>
+<section >
+<h3>Embedded needs 2/2</h3>
+<table class="need needs_grid_simple needs_layout_clean rtd-exclude-wy-table no-sphinx-material-strip needs_style_none needs_type_story docutils align-default" id="ST_PAR_001">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="need head row-odd"><td class="need head"><div class="needs_head line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">User Story</span></span>: </span><strong><span><span class="needs_title"><span class="needs_data">My parent story</span></span></span></strong><span> <span class="needs-id"><a class="reference internal" href="#ST_PAR_001" title="ST_PAR_001">ST_PAR_001</a></span>  <span class="needs collapse" id="target__show__meta"><span class="needs collapsed"><span><img alt="_images/arrow-down-circle.svg" class="needs_image no-scaled-link" src="_images/arrow-down-circle.svg" width="17px" /></span></span><span class="needs visible"><span><img alt="_images/arrow-right-circle.svg" class="needs_image no-scaled-link" src="_images/arrow-right-circle.svg" width="17px" /></span></span></span> </span></div>
+</div>
+</td>
+</tr>
+<tr class="need meta row-even"><td class="need meta"><div class="needs_meta line-block">
+<div class="line"><span><span></span></span></div>
+<div class="line"><span><div class="line">child needs: <span class="parent_needs"><span><a class="reference internal" href="#ST_CHIlD_001" title="ST_PAR_001">ST_CHIlD_001</a></span></span></div>
+</span></div>
+</div>
+</td>
+</tr>
+<tr class="need content row-odd"><td class="need content" colspan="1"><p>This parent need contains the following need:</p>
+<table class="need needs_grid_simple needs_layout_clean rtd-exclude-wy-table no-sphinx-material-strip needs_style_red_border needs_type_story docutils align-default" id="ST_CHIlD_001">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="need head row-odd"><td class="need head"><div class="needs_head line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">User Story</span></span>: </span><strong><span><span class="needs_title"><span class="needs_data">My child story</span></span></span></strong><span> <span class="needs-id"><a class="reference internal" href="#ST_CHIlD_001" title="ST_CHIlD_001">ST_CHIlD_001</a></span>  <span class="needs collapse" id="target__show__meta"><span class="needs collapsed"><span><img alt="_images/arrow-down-circle.svg" class="needs_image no-scaled-link" src="_images/arrow-down-circle.svg" width="17px" /></span></span><span class="needs visible"><span><img alt="_images/arrow-right-circle.svg" class="needs_image no-scaled-link" src="_images/arrow-right-circle.svg" width="17px" /></span></span></span> </span></div>
+</div>
+</td>
+</tr>
+<tr class="need meta row-even"><td class="need meta"><div class="needs_meta line-block">
+<div class="line"><span><span><div class="line"><span class="needs_style"><span class="needs_label">style: </span><span class="needs_data">red_border</span></span></div>
+</span></span></div>
+<div class="line"><span><div class="line">parent needs: <span class="parent_needs"><span><a class="reference internal" href="#ST_PAR_001" title="ST_CHIlD_001">ST_PAR_001</a></span></span></div>
+</span></div>
+</div>
+</td>
+</tr>
+<tr class="need content row-odd"><td class="need content" colspan="1"><p>This is the child need.</p></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section >
+<h3>Need parts 1/2</h3>
+<pre data-id="need-parts-1-2"><code data-trim data-noescape class="rst">.. story:: A Story with parts
+   :id: ST_PARTS_001
+   :links: ST_PARTS_001.1, ST_PARTS_001.nothing
+
+   As awesome user I want to:
+
+   * :need_part:`(1)Get everything`
+   * :np:`(nothing)Be responsible for nothing`</code></pre>
+</section>
+<section >
+<h3>Need parts 2/2</h3>
+<table class="need needs_grid_simple needs_layout_clean rtd-exclude-wy-table no-sphinx-material-strip needs_style_none needs_type_story docutils align-default" id="ST_PARTS_001">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="need head row-odd"><td class="need head"><div class="needs_head line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">User Story</span></span>: </span><strong><span><span class="needs_title"><span class="needs_data">A Story with parts</span></span></span></strong><span> <span class="needs-id"><a class="reference internal" href="#ST_PARTS_001" title="ST_PARTS_001">ST_PARTS_001</a></span>  <span class="needs collapse" id="target__show__meta"><span class="needs collapsed"><span><img alt="_images/arrow-down-circle.svg" class="needs_image no-scaled-link" src="_images/arrow-down-circle.svg" width="17px" /></span></span><span class="needs visible"><span><img alt="_images/arrow-right-circle.svg" class="needs_image no-scaled-link" src="_images/arrow-right-circle.svg" width="17px" /></span></span></span> </span></div>
+</div>
+</td>
+</tr>
+<tr class="need meta row-even"><td class="need meta"><div class="needs_meta line-block">
+<div class="line"><span><span></span></span></div>
+<div class="line"><span><div class="line">links outgoing: <span class="links"><span><a class="reference internal" href="#ST_PARTS_001.1" title="ST_PARTS_001">ST_PARTS_001.1</a>, <a class="reference internal" href="#ST_PARTS_001.nothing" title="ST_PARTS_001">ST_PARTS_001.nothing</a></span></span></div>
+<div class="line">links incoming: <span class="links"><span><a class="reference internal" href="#ST_PARTS_001" title="ST_PARTS_001">ST_PARTS_001</a></span></span></div>
+</span></div>
+</div>
+</td>
+</tr>
+<tr class="need content row-odd"><td class="need content" colspan="1"><p>As awesome user I want to:</p>
+<ul class="simple">
+<li><p><span class="need-part" id="ST_PARTS_001.1">Get everything<a class="needs-id reference internal" href="#ST_PARTS_001.1"> 1</a></span></p></li>
+<li><p><span class="need-part" id="ST_PARTS_001.nothing">Be responsible for nothing<a class="needs-id reference internal" href="#ST_PARTS_001.nothing"> nothing</a></span></p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section>
+<section >
+<h2>Sphinx-Needs Customization</h2>
+</section>
+<section >
+<h3>Types</h3>
+<pre data-id="types"><code data-trim data-noescape class="rst">needs_types = [
+    dict(
+        directive=&quot;req&quot;,
+        title=&quot;Requirement&quot;,
+        prefix=&quot;R_&quot;,
+        color=&quot;#BFD8D2&quot;,
+        style=&quot;node&quot;
+    ),
+    dict(directive=&quot;spec&quot;, title=&quot;Specification&quot;, prefix=&quot;S_&quot;, color=&quot;#FEDCD2&quot;, style=&quot;node&quot;),
+]</code></pre>
+<div class="small docutils container">
+<div class="line-block">
+<div class="line">Sphinx-Needs: <a class="reference external" href="https://sphinxcontrib-needs.readthedocs.io/en/latest/configuration.html#needs-types">Need Types</a></div>
+<div class="line">PlantUML: <a class="reference external" href="https://plantuml.com/deployment-diagram">Styles</a></div>
+</div>
+</div>
+</section>
+<section >
+<h3>Links</h3>
+<pre data-id="links"><code data-trim data-noescape class="rst">needs_extra_links = [
+    {
+       &quot;option&quot;: &quot;triggers&quot;,
+       &quot;incoming&quot;: &quot;is triggered by&quot;,
+       &quot;outgoing&quot;: &quot;triggers&quot;,
+       &quot;copy&quot;: False,
+       &quot;allow_dead_links&quot;: True,
+       &quot;style&quot;: &quot;#00AA00&quot;
+       &quot;style_part&quot;: &quot;#00AA00&quot;
+       &quot;style_start&quot;: &quot;-&quot;,
+       &quot;style_end&quot;: &quot;--o&quot;,
+    }
+ ]</code></pre>
+<div class="small docutils container">
+<div class="line-block">
+<div class="line">Sphinx-Needs: <a class="reference external" href="https://sphinxcontrib-needs.readthedocs.io/en/latest/configuration.html#needs-extra-links">Need Links</a></div>
+<div class="line">PlantUML: <a class="reference external" href="https://plantuml.com/deployment-diagram#b5f6831632fd63c1">Line styles</a></div>
+</div>
+</div>
+</section>
+<section >
+<h3>Layout</h3>
+<pre data-id="layout"><code data-trim data-noescape class="rst">.. story:: Layout example
+   :layout: complete
+
+.. story:: Layout example
+   :layout: focus</code></pre>
+<table class="need needs_grid_complex needs_layout_complete rtd-exclude-wy-table no-sphinx-material-strip needs_style_none needs_type_story docutils align-default" id="US_002">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 30%" />
+<col style="width: 30%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+</colgroup>
+<tbody>
+<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#US_002" title="US_002">US_002</a></span></span></div>
+</div>
+</td>
+<td class="head_center" colspan="2"><div class="needs_head line-block">
+<div class="line"><span><span class="needs_title"><span class="needs_data">Layout example</span></span></span></div>
+</div>
+</td>
+<td class="head_right" colspan="2"><div class="needs_head_right line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">User Story</span></span></span></div>
+</div>
+</td>
+</tr>
+<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">closed</span></span></div>
+</span></span></div>
+</div>
+</td>
+<td class="meta" colspan="3"><div class="needs_meta_right line-block">
+<div class="line"><span><div class="line">links outgoing: <span class="links"><span><a class="reference internal" href="#US_003" title="US_002">US_003</a></span></span></div>
+<div class="line">links incoming: <span class="links"><span><a class="reference internal" href="#US_003" title="US_002">US_003</a></span></span></div>
+</span></div>
+</div>
+</td>
+</tr>
+<tr class="content row-odd"><td class="content" colspan="6"><p>Some content</p></td>
+</tr>
+<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
+<div class="line"><span>layout: <span class="needs_layout"><span class="needs_data">complete</span></span></span></div>
+</div>
+</td>
+<td class="footer" colspan="2"></td>
+<td class="footer_right" colspan="2"><div class="needs_footer_right line-block">
+<div class="line"><span>style: </span></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="need needs_grid_content_side_left needs_layout_focus_l rtd-exclude-wy-table no-sphinx-material-strip needs_style_none needs_type_story docutils align-default" id="US_003">
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 95%" />
+</colgroup>
+<tbody>
+<tr class="content row-odd"><td class="side left" rowspan="1"><div class="needs_side line-block">
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#US_003" title="US_003">US_003</a></span></span></div>
+</div>
+</td>
+<td class="content"><p>Some content</p></td>
+</tr>
+</tbody>
+</table>
+<div class="small docutils container">
+<div class="line-block">
+<div class="line">Sphinx-Needs: <a class="reference external" href="https://sphinxcontrib-needs.readthedocs.io/en/latest/layout_styles.html#layouts">Layouts</a></div>
+</div>
+</div>
+</section>
+<section >
+<h3>Styles</h3>
+<table class="need needs_grid_content_side_left needs_layout_focus_l rtd-exclude-wy-table no-sphinx-material-strip needs_style_red needs_type_story docutils align-default" id="US_004">
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 95%" />
+</colgroup>
+<tbody>
+<tr class="content row-odd"><td class="side left" rowspan="1"><div class="needs_side line-block">
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#US_004" title="US_004">US_004</a></span></span></div>
+</div>
+</td>
+<td class="content"><p><code class="docutils literal notranslate"><span class="pre">:style:</span> <span class="pre">red</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<table class="need needs_grid_content_side_left needs_layout_focus_l rtd-exclude-wy-table no-sphinx-material-strip needs_style_green_border needs_type_story docutils align-default" id="US_005">
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 95%" />
+</colgroup>
+<tbody>
+<tr class="content row-odd"><td class="side left" rowspan="1"><div class="needs_side line-block">
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#US_005" title="US_005">US_005</a></span></span></div>
+</div>
+</td>
+<td class="content"><p><code class="docutils literal notranslate"><span class="pre">:style:</span> <span class="pre">green_border</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<table class="need needs_grid_content_side_left needs_layout_focus_l rtd-exclude-wy-table no-sphinx-material-strip needs_style_discreet needs_type_story docutils align-default" id="US_006">
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 95%" />
+</colgroup>
+<tbody>
+<tr class="content row-odd"><td class="side left" rowspan="1"><div class="needs_side line-block">
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#US_006" title="US_006">US_006</a></span></span></div>
+</div>
+</td>
+<td class="content"><p><code class="docutils literal notranslate"><span class="pre">:style:</span> <span class="pre">discreet</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<table class="need needs_grid_content_side_left needs_layout_focus_l rtd-exclude-wy-table no-sphinx-material-strip needs_style_yellow needs_style_blue_border needs_type_story docutils align-default" id="US_007">
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 95%" />
+</colgroup>
+<tbody>
+<tr class="content row-odd"><td class="side left" rowspan="1"><div class="needs_side line-block">
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#US_007" title="US_007">US_007</a></span></span></div>
+</div>
+</td>
+<td class="content"><p><code class="docutils literal notranslate"><span class="pre">:style:</span> <span class="pre">yellow,</span> <span class="pre">blue_border</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="small docutils container">
+<div class="line-block">
+<div class="line">Sphinx-Needs: <a class="reference external" href="https://sphinxcontrib-needs.readthedocs.io/en/latest/layout_styles.html#styles">Styles</a></div>
+<div class="line">Sphinx-Needs: <a class="reference external" href="https://sphinxcontrib-needs.readthedocs.io/en/latest/directives/needtable.html#row-style-based-on-specific-need-value">Table Row Styles</a></div>
+</div>
+</div>
+</section>
+</section>
+<section>
+<section >
+<h2>Sphinx-Needs Automation</h2>
+</section>
+<section >
+<h3>Dynamic Functions</h3>
+<pre data-id="dynamic-functions"><code data-trim data-noescape class="rst">.. story:: Dynamic Functions
+   :id: US_DF
+   :status: open
+   :linked_status: [[copy(&quot;status&quot;, 'US_002')]]
+
+   This need has the id **[[copy(&quot;id&quot;)]]** and status **[[copy(&quot;status&quot;)]]**.</code></pre>
+<table class="need needs_grid_simple needs_layout_clean rtd-exclude-wy-table no-sphinx-material-strip needs_style_none needs_type_story docutils align-default" id="US_DF">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="need head row-odd"><td class="need head"><div class="needs_head line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">User Story</span></span>: </span><strong><span><span class="needs_title"><span class="needs_data">Dynamic Functions</span></span></span></strong><span> <span class="needs-id"><a class="reference internal" href="#US_DF" title="US_DF">US_DF</a></span>  <span class="needs collapse" id="target__show__meta"><span class="needs collapsed"><span><img alt="_images/arrow-down-circle.svg" class="needs_image no-scaled-link" src="_images/arrow-down-circle.svg" width="17px" /></span></span><span class="needs visible"><span><img alt="_images/arrow-right-circle.svg" class="needs_image no-scaled-link" src="_images/arrow-right-circle.svg" width="17px" /></span></span></span> </span></div>
+</div>
+</td>
+</tr>
+<tr class="need meta row-even"><td class="need meta"><div class="needs_meta line-block">
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">open</span></span></div>
+<div class="line"><span class="needs_linked_status"><span class="needs_label">linked_status: </span><span class="needs_data">closed</span></span></div>
+</span></span></div>
+<div class="line"><span></span></div>
+</div>
+</td>
+</tr>
+<tr class="need content row-odd"><td class="need content" colspan="1"><p>This need has the id <strong>US_DF</strong> and status <strong>open</strong>.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="small docutils container">
+<div class="line-block">
+<div class="line">Sphinx-Needs: <a class="reference external" href="https://sphinxcontrib-needs.readthedocs.io/en/latest/dynamic_functions.html">Dynamic Functions</a></div>
+</div>
+</div>
+</section>
+<section >
+<h3>Global Options</h3>
+<pre data-id="global-options"><code data-trim data-noescape class="rst">needs_global_options = {
+    'global_option': 'Fix value',
+    'author': ('Marco', '&quot;security&quot; in tags', 'Daniel)
+    'status':[
+         ('closed', 'status.lower() in [&quot;done&quot;, &quot;resolved&quot;, &quot;closed&quot;]'),
+         ('open', 'status.lower() in [&quot;open&quot;, &quot;new&quot;]')
+    ]
+}</code></pre>
+<div class="small docutils container">
+<div class="line-block">
+<div class="line">Sphinx-Needs: <a class="reference external" href="https://sphinxcontrib-needs.readthedocs.io/en/latest/configuration.html#needs-global-options">needs_global_options</a></div>
+</div>
+</div>
+</section>
+<section >
+<h3>Warnings</h3>
+<pre data-id="warnings"><code data-trim data-noescape class="rst">def my_custom_warning_check(need, log):
+    if need[&quot;status&quot;] == &quot;open&quot;:
+        log.info(f&quot;{need['id']} status must not be 'open'.&quot;)
+        return True
+    return False
+
+needs_warnings = {
+    'invalid_status' : &quot;status not in ['open', 'closed']&quot;,
+    'type_match': my_custom_warning_check,
+}</code></pre>
+<p>Build log:</p>
+<pre data-id="warnings"><code data-trim data-noescape class="text">Checking sphinx-needs warnings
+  type_match: passed
+  invalid_status: failed
+      failed needs: 2 (US_001, US_002)
+      used filter: status not in ['open', 'closed']</code></pre>
+<div class="small docutils container">
+<div class="line-block">
+<div class="line">Sphinx-Needs: <a class="reference external" href="https://sphinxcontrib-needs.readthedocs.io/en/latest/configuration.html#needs-warnings">needs_warnings</a></div>
+</div>
+</div>
+</section>
+<section >
+<h3>Template 1/2</h3>
+<div class="small docutils container">
+<p><code class="docutils literal notranslate"><span class="pre">/my_file.rst</span></code></p>
+</div>
+<pre data-id="template-1-2"><code data-trim data-noescape class="text">.. spec:: My specification
+   :id: TEMPL_POST_SPEC
+   :links: US_003, US_004
+   :post_template: post_template
+
+   This is my **specification** content.</code></pre>
+<div class="small docutils container">
+<p><code class="docutils literal notranslate"><span class="pre">/needs_templates/post_template.need</span></code></p>
+</div>
+<pre data-id="template-1-2"><code data-trim data-noescape class="rst">**Analytics for above need:** {{title}}
+
+.. needflow::
+   :filter: id == '{{id}}' or '{{id}}' in links_back</code></pre>
+<div class="small docutils container">
+<div class="line-block">
+<div class="line">Sphinx-Needs: <a class="reference external" href="https://sphinxcontrib-needs.readthedocs.io/en/latest/directives/need.html#post-template">post_template</a></div>
+</div>
+</div>
+</section>
+<section >
+<h3>Template 2/2</h3>
+<table class="need needs_grid_simple needs_layout_clean rtd-exclude-wy-table no-sphinx-material-strip needs_style_none needs_type_spec docutils align-default" id="TEMPL_POST_SPEC">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="need head row-odd"><td class="need head"><div class="needs_head line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Specification</span></span>: </span><strong><span><span class="needs_title"><span class="needs_data">My specification</span></span></span></strong><span> <span class="needs-id"><a class="reference internal" href="#TEMPL_POST_SPEC" title="TEMPL_POST_SPEC">TEMPL_POST_SPEC</a></span>  <span class="needs collapse" id="target__show__meta"><span class="needs collapsed"><span><img alt="_images/arrow-down-circle.svg" class="needs_image no-scaled-link" src="_images/arrow-down-circle.svg" width="17px" /></span></span><span class="needs visible"><span><img alt="_images/arrow-right-circle.svg" class="needs_image no-scaled-link" src="_images/arrow-right-circle.svg" width="17px" /></span></span></span> </span></div>
+</div>
+</td>
+</tr>
+<tr class="need meta row-even"><td class="need meta"><div class="needs_meta line-block">
+<div class="line"><span><span><div class="line"><span class="needs_post_template"><span class="needs_label">post_template: </span><span class="needs_data">post_template</span></span></div>
+</span></span></div>
+<div class="line"><span><div class="line">links outgoing: <span class="links"><span><a class="reference internal" href="#US_003" title="TEMPL_POST_SPEC">US_003</a>, <a class="reference internal" href="#US_004" title="TEMPL_POST_SPEC">US_004</a></span></span></div>
+</span></div>
+</div>
+</td>
+</tr>
+<tr class="need content row-odd"><td class="need content" colspan="1"><p>This is my <strong>specification</strong> content.</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Analytics for above need:</strong> My specification</p>
+<figure class="align-center" id="needflow-index-0">
+<p class="plantuml">
+<img src="_images/plantuml-1e0806137d9011d48dacfea8aa90d02f64cc3417.svg" alt="&#64;startuml
+
+' Nodes definition 
+
+node &quot;&lt;size:12&gt;User Story&lt;/size&gt;\n**Layout example**\n&lt;size:10&gt;US_003&lt;/size&gt;&quot; as US_003 [[../index.html#US_003]] #BFD8D2 
+node &quot;&lt;size:12&gt;User Story&lt;/size&gt;\n**Style example**\n&lt;size:10&gt;US_004&lt;/size&gt;&quot; as US_004 [[../index.html#US_004]] #BFD8D2 
+node &quot;&lt;size:12&gt;Specification&lt;/size&gt;\n**My**\n**specification**\n&lt;size:10&gt;TEMPL_POST_SPEC&lt;/size&gt;&quot; as TEMPL_POST_SPEC [[../index.html#TEMPL_POST_SPEC]] #FEDCD2 
+
+' Connection definition 
+
+TEMPL_POST_SPEC --&gt; US_003
+TEMPL_POST_SPEC --&gt; US_004
+
+&#64;enduml"/></p>
+</figure>
+</section>
+<section >
+<h3>Debug Layout 1/2</h3>
+<pre data-id="debug-layout-1-2"><code data-trim data-noescape class="rst">.. story:: Debug
+   :id: US_DEBUG
+   :status: open
+   :layout: debug</code></pre>
+<table class="need needs_grid_simple needs_layout_debug rtd-exclude-wy-table no-sphinx-material-strip needs_style_none needs_type_story docutils align-default" id="US_DEBUG">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="need head row-odd"><td class="need head"><div class="needs_head line-block">
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#US_DEBUG" title="US_DEBUG">US_DEBUG</a></span> </span><strong><span><span class="needs_title"><span class="needs_data">Debug</span></span></span></strong></div>
+<div class="line"><strong><span><span class="needs collapse" id="target__hide__meta"><span class="needs collapsed">Debug view on</span><span class="needs visible">Debug view off</span></span></span></strong></div>
+</div>
+</td>
+</tr>
+<tr class="need meta row-even"><td class="need meta"><div class="needs_meta line-block">
+<div class="line"><span><span><div class="line"><span class="needs_docname"><span class="needs_label">docname: </span><span class="needs_data">index</span></span></div>
+<div class="line"><span class="needs_lineno"><span class="needs_label">lineno: </span>1012</span></div>
+<div class="line"><span class="needs_target_node"><span class="needs_label">target_node: </span>&lt;target ids=&quot;['US_DEBUG']&quot; refid=&quot;US_DEBUG&quot;/&gt;</span></div>
+<div class="line"><span class="needs_external_url"><span class="needs_label">external_url: </span><span class="needs_data"></span></span></div>
+<div class="line"><span class="needs_content_node"><span class="needs_label">content_node: </span>&lt;Need classes=&quot;['need', 'need-story']&quot; ids=&quot;['US_DEBUG']&quot; refid=&quot;US_DEBUG&quot;/&gt;</span></div>
+<div class="line"><span class="needs_type"><span class="needs_label">type: </span><span class="needs_data">story</span></span></div>
+<div class="line"><span class="needs_type_name"><span class="needs_label">type_name: </span><span class="needs_data">User Story</span></span></div>
+<div class="line"><span class="needs_type_prefix"><span class="needs_label">type_prefix: </span><span class="needs_data">US_</span></span></div>
+<div class="line"><span class="needs_type_color"><span class="needs_label">type_color: </span><span class="needs_data">#BFD8D2</span></span></div>
+<div class="line"><span class="needs_type_style"><span class="needs_label">type_style: </span><span class="needs_data">node</span></span></div>
+<div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">open</span></span></div>
+<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"></span></span></div>
+<div class="line"><span class="needs_id"><span class="needs_label">id: </span><span class="needs_data">US_DEBUG</span></span></div>
+<div class="line"><span class="needs_title"><span class="needs_label">title: </span><span class="needs_data">Debug</span></span></div>
+<div class="line"><span class="needs_full_title"><span class="needs_label">full_title: </span><span class="needs_data">Debug</span></span></div>
+<div class="line"><span class="needs_content"><span class="needs_label">content: </span><span class="needs_data"></span></span></div>
+<div class="line"><span class="needs_collapse"><span class="needs_label">collapse: </span><span class="needs_data"></span></span></div>
+<div class="line"><span class="needs_style"><span class="needs_label">style: </span><span class="needs_data"></span></span></div>
+<div class="line"><span class="needs_layout"><span class="needs_label">layout: </span><span class="needs_data">debug</span></span></div>
+<div class="line"><span class="needs_template"><span class="needs_label">template: </span><span class="needs_data"></span></span></div>
+<div class="line"><span class="needs_pre_template"><span class="needs_label">pre_template: </span><span class="needs_data"></span></span></div>
+<div class="line"><span class="needs_post_template"><span class="needs_label">post_template: </span><span class="needs_data"></span></span></div>
+<div class="line"><span class="needs_hide"><span class="needs_label">hide: </span>False</span></div>
+<div class="line"><span class="needs_parts"><span class="needs_label">parts: </span>{}</span></div>
+<div class="line"><span class="needs_is_part"><span class="needs_label">is_part: </span>False</span></div>
+<div class="line"><span class="needs_is_need"><span class="needs_label">is_need: </span>True</span></div>
+<div class="line"><span class="needs_parent_need"><span class="needs_label">parent_need: </span><span class="needs_data"></span></span></div>
+<div class="line"><span class="needs_is_external"><span class="needs_label">is_external: </span>False</span></div>
+<div class="line"><span class="needs_external_css"><span class="needs_label">external_css: </span><span class="needs_data">external_link</span></span></div>
+<div class="line"><span class="needs_is_modified"><span class="needs_label">is_modified: </span>False</span></div>
+<div class="line"><span class="needs_modifications"><span class="needs_label">modifications: </span>0</span></div>
+<div class="line"><span class="needs_linked_status"><span class="needs_label">linked_status: </span><span class="needs_data"></span></span></div>
+<div class="line"><span class="needs_query"><span class="needs_label">query: </span><span class="needs_data"></span></span></div>
+<div class="line"><span class="needs_specific"><span class="needs_label">specific: </span><span class="needs_data"></span></span></div>
+<div class="line"><span class="needs_max_amount"><span class="needs_label">max_amount: </span><span class="needs_data"></span></span></div>
+<div class="line"><span class="needs_max_content_lines"><span class="needs_label">max_content_lines: </span><span class="needs_data"></span></span></div>
+<div class="line"><span class="needs_id_prefix"><span class="needs_label">id_prefix: </span><span class="needs_data"></span></span></div>
+<div class="line"><span class="needs_user"><span class="needs_label">user: </span><span class="needs_data"></span></span></div>
+<div class="line"><span class="needs_created_at"><span class="needs_label">created_at: </span><span class="needs_data"></span></span></div>
+<div class="line"><span class="needs_updated_at"><span class="needs_label">updated_at: </span><span class="needs_data"></span></span></div>
+<div class="line"><span class="needs_closed_at"><span class="needs_label">closed_at: </span><span class="needs_data"></span></span></div>
+<div class="line"><span class="needs_service"><span class="needs_label">service: </span><span class="needs_data"></span></span></div>
+<div class="line"><span class="needs_url"><span class="needs_label">url: </span><span class="needs_data"></span></span></div>
+<div class="line"><span class="needs_avatar"><span class="needs_label">avatar: </span><span class="needs_data"></span></span></div>
+<div class="line"><span class="needs_hidden"><span class="needs_label">hidden: </span><span class="needs_data"></span></span></div>
+<div class="line"><span class="needs_duration"><span class="needs_label">duration: </span><span class="needs_data"></span></span></div>
+<div class="line"><span class="needs_completion"><span class="needs_label">completion: </span><span class="needs_data"></span></span></div>
+<div class="line"><span class="needs_has_dead_links"><span class="needs_label">has_dead_links: </span><span class="needs_data"></span></span></div>
+<div class="line"><span class="needs_has_forbidden_dead_links"><span class="needs_label">has_forbidden_dead_links: </span><span class="needs_data"></span></span></div>
+<div class="line"><span class="needs_links"><span class="needs_label">links: </span><span class="needs_data_container"></span></span></div>
+<div class="line"><span class="needs_links_back"><span class="needs_label">links_back: </span><span class="needs_data_container"></span></span></div>
+<div class="line"><span class="needs_parent_needs"><span class="needs_label">parent_needs: </span><span class="needs_data_container"></span></span></div>
+<div class="line"><span class="needs_parent_needs_back"><span class="needs_label">parent_needs_back: </span><span class="needs_data_container"></span></span></div>
+<div class="line"><span class="needs_sections"><span class="needs_label">sections: </span><span class="needs_data_container"><span class="needs_data">Debug Layout 1/2</span><span class="needs_spacer">, </span><span class="needs_data">Sphinx-Needs Automation</span><span class="needs_spacer">, </span><span class="needs_data">Documentation without Frustration</span></span></span></div>
+<div class="line"><span class="needs_section_name"><span class="needs_label">section_name: </span><span class="needs_data">Debug Layout 1/2</span></span></div>
+<div class="line"><span class="needs_signature"><span class="needs_label">signature: </span><span class="needs_data"></span></span></div>
+</span></span></div>
+</div>
+</td>
+</tr>
+<tr class="need content row-odd"><td class="need content" colspan="1"></td>
+</tr>
+</tbody>
+</table>
+<div class="small docutils container">
+<div class="line-block">
+<div class="line">Sphinx-Needs: <a class="reference external" href="https://sphinxcontrib-needs.readthedocs.io/en/latest/layout_styles.html#EX_DEBUG">Debug Layout</a></div>
+</div>
+</div>
+</section>
+<section >
+<h3>Debug Layout 2/2</h3>
+<pre data-id="debug-layout-2-2"><code data-trim data-noescape class="rst">.. needflow::
+   :filter: id == 'TEMPL_POST_SPEC' or 'TEMPL_POST_SPEC' in links_back
+   :debug:</code></pre>
+<div class="small docutils container">
+<div class="line-block">
+<div class="line">Sphinx-Needs: <a class="reference external" href="https://sphinxcontrib-needs.readthedocs.io/en/latest/directives/needflow.html#needflow-debug">needflow debug</a></div>
+</div>
+</div>
+<figure class="align-center" id="needflow-index-1">
+<p class="plantuml">
+<img src="_images/plantuml-1e0806137d9011d48dacfea8aa90d02f64cc3417.svg" alt="&#64;startuml
+
+' Nodes definition 
+
+node &quot;&lt;size:12&gt;User Story&lt;/size&gt;\n**Layout example**\n&lt;size:10&gt;US_003&lt;/size&gt;&quot; as US_003 [[../index.html#US_003]] #BFD8D2 
+node &quot;&lt;size:12&gt;User Story&lt;/size&gt;\n**Style example**\n&lt;size:10&gt;US_004&lt;/size&gt;&quot; as US_004 [[../index.html#US_004]] #BFD8D2 
+node &quot;&lt;size:12&gt;Specification&lt;/size&gt;\n**My**\n**specification**\n&lt;size:10&gt;TEMPL_POST_SPEC&lt;/size&gt;&quot; as TEMPL_POST_SPEC [[../index.html#TEMPL_POST_SPEC]] #FEDCD2 
+
+' Connection definition 
+
+TEMPL_POST_SPEC --&gt; US_003
+TEMPL_POST_SPEC --&gt; US_004
+
+&#64;enduml"/></p>
+</figure>
+<pre>@startuml
+
+&#x27; Nodes definition 
+
+node &quot;&lt;size:12&gt;User Story&lt;/size&gt;\n**Layout example**\n&lt;size:10&gt;US_003&lt;/size&gt;&quot; as US_003 [[../index.html#US_003]] #BFD8D2 
+node &quot;&lt;size:12&gt;User Story&lt;/size&gt;\n**Style example**\n&lt;size:10&gt;US_004&lt;/size&gt;&quot; as US_004 [[../index.html#US_004]] #BFD8D2 
+node &quot;&lt;size:12&gt;Specification&lt;/size&gt;\n**My**\n**specification**\n&lt;size:10&gt;TEMPL_POST_SPEC&lt;/size&gt;&quot; as TEMPL_POST_SPEC [[../index.html#TEMPL_POST_SPEC]] #FEDCD2 
+
+&#x27; Connection definition 
+
+TEMPL_POST_SPEC --&gt; US_003
+TEMPL_POST_SPEC --&gt; US_004
+
+@enduml</pre></section>
+</section>
+<section>
+<section >
+<h2>Sphinx-Needs Data Exchange</h2>
+</section>
+<section >
+<h3>Export</h3>
+<pre data-id="export"><code data-trim data-noescape class="default">make needs</code></pre>
+<pre data-id="export"><code data-trim data-noescape class="default"># File: _build/needs/needs.json
+{
+    &quot;created&quot;: &quot;2017-09-21T20:40:49.090464&quot;,
+    &quot;current_version&quot;: &quot;1.0&quot;,
+    &quot;project&quot;: &quot;Documentation without Frustration&quot;,
+    &quot;versions&quot;: {
+        &quot;1.0&quot;: {
+            &quot;created&quot;: &quot;2017-09-21T20:40:49.090443&quot;,
+            &quot;needs&quot;: {
+                &quot;SP_002&quot;: {
+                    &quot;description&quot;: &quot;&quot;,
+                    &quot;id&quot;: &quot;SP_001&quot;,
+                    &quot;links&quot;: [
+                        &quot;US_002&quot;
+                    ],
+                    &quot;status&quot;: null,
+                    &quot;tags&quot;: [
+                        &quot;user&quot;
+                    ],
+                    &quot;title&quot;: &quot;Use flask-login for secure user verification and authorisation&quot;,
+                    &quot;type&quot;: &quot;spec&quot;,
+                    &quot;type_name&quot;: &quot;Specification&quot;
+                },
+                &quot;US_002&quot;: {
+                    &quot;description&quot;: &quot;We need to use the unique email address for user login and verification\n\n.. uml::\n\n         &#64;startuml\n         rectangle Alice\n         rectangle Bob\n         Alice -right-&gt; Bob\n         &#64;enduml&quot;,
+                    &quot;id&quot;: &quot;US_002&quot;,
+                    &quot;links&quot;: [],
+                    &quot;status&quot;: null,
+                    &quot;tags&quot;: [
+                        &quot;user&quot;,
+                        &quot;login&quot;,
+                        &quot;email&quot;
+                    ],
+                    &quot;title&quot;: &quot;As user I want to be able to use my email address for login&quot;,
+                    &quot;type&quot;: &quot;story&quot;,
+                    &quot;type_name&quot;: &quot;User Story&quot;
+                }
+            },
+            &quot;needs_amount&quot;: 2
+        }
+    }
+}</code></pre>
+<div class="small docutils container">
+<p>Sphinx-Needs documentation: <a class="reference external" href="http://sphinxcontrib-needs.readthedocs.io/en/latest/builders.html">Builders</a></p>
+</div>
+</section>
+<section >
+<h3>Import</h3>
+<pre data-id="import"><code data-trim data-noescape class="default">.. needimport:: /needs.json
+   :id_prefix: IMP_
+   :version: 1.0
+   :tags: imported
+   :filter: &quot;SP&quot; in id</code></pre>
+<table class="need needs_grid_simple needs_layout_clean rtd-exclude-wy-table no-sphinx-material-strip needs_style_none needs_type_spec docutils align-default" id="IMP_SP_001">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="need head row-odd"><td class="need head"><div class="needs_head line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Specification</span></span>: </span><strong><span><span class="needs_title"><span class="needs_data">Use flask-login for secure user verification and authorisation</span></span></span></strong><span> <span class="needs-id"><a class="reference internal" href="#IMP_SP_001" title="IMP_SP_001">IMP_SP_001</a></span>  <span class="needs collapse" id="target__show__meta"><span class="needs collapsed"><span><img alt="_images/arrow-down-circle.svg" class="needs_image no-scaled-link" src="_images/arrow-down-circle.svg" width="17px" /></span></span><span class="needs visible"><span><img alt="_images/arrow-right-circle.svg" class="needs_image no-scaled-link" src="_images/arrow-right-circle.svg" width="17px" /></span></span></span> </span></div>
+</div>
+</td>
+</tr>
+<tr class="need meta row-even"><td class="need meta"><div class="needs_meta line-block">
+<div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">user</span><span class="needs_spacer">, </span><span class="needs_data">imported</span></span></span></div>
+</span></span></div>
+<div class="line"><span><div class="line">links outgoing: <span class="links"><span><a class="reference internal" href="#US_001" title="IMP_SP_001">US_001</a></span></span></div>
+</span></div>
+</div>
+</td>
+</tr>
+<tr class="need content row-odd"><td class="need content" colspan="1"></td>
+</tr>
+</tbody>
+</table>
+<div class="small docutils container">
+<p>Sphinx-Needs documentation: <a class="reference external" href="http://sphinxcontrib-needs.readthedocs.io/en/latest/directives.html#needimport">needimport</a></p>
+</div>
+</section>
+<section >
+<h3>External Needs</h3>
+<pre data-id="external-needs"><code data-trim data-noescape class="python">needs_external_needs = [
+    {
+        'base_url': 'http://mydocs/my_project',
+        'json_url':  'http://mydocs/my_project/needs.json',
+        'version': '1.0',
+        'id_prefix': 'ext_',
+        'css_class': 'external_link',
+    }
+]</code></pre>
+<div class="small docutils container">
+<p>Sphinx-Needs documentation: <a class="reference external" href="https://sphinxcontrib-needs.readthedocs.io/en/latest/configuration.html#needs-external-needs">needs_external_needs</a></p>
+</div>
+</section>
+<section >
+<h3>Services</h3>
+<pre data-id="services"><code data-trim data-noescape class="rest">.. needservice:: github-issues
+   :query: repo:useblocks/sphinxcontrib-needs state:closed needtable viewports
+   :max_amount: 1</code></pre>
+<table class="need needs_grid_complex needs_layout_github rtd-exclude-wy-table no-sphinx-material-strip needs_style_none needs_type_spec docutils align-default" id="GH_ISSUE_164">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 30%" />
+<col style="width: 30%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+</colgroup>
+<tbody>
+<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#GH_ISSUE_164" title="GH_ISSUE_164">GH_ISSUE_164</a></span></span></div>
+<div class="line"><span><span class="needs collapse" id="target__hide__meta__footer"><span class="needs collapsed"><span><img alt="_images/arrow-down-circle.svg" class="needs_image no-scaled-link" src="_images/arrow-down-circle.svg" width="17px" /></span></span><span class="needs visible"><span><img alt="_images/arrow-right-circle.svg" class="needs_image no-scaled-link" src="_images/arrow-right-circle.svg" width="17px" /></span></span></span></span></div>
+</div>
+</td>
+<td class="head_center" colspan="2"><div class="needs_head line-block">
+<div class="line"><strong><span><span class="needs_title"><span class="needs_data">needtable is invisible on wide viewports when using 'read the docs' theme</span></span></span></strong><span> (<span><a class="reference external" href="https://github.com/useblocks/sphinxcontrib-needs/issues/164">url</a></span>)</span></div>
+</div>
+</td>
+<td class="head_right" colspan="2"><div class="needs_head_right line-block">
+<div class="line"><span><span><a class="needs_image reference internal" href="_images/33452915.png"><img alt="_images/33452915.png" class="needs_image align-middle" src="_images/33452915.png" style="width: 40px;" /></a></span></span></div>
+<div class="line"><span><span class="needs_user"><span class="needs_data">danieleades</span></span></span></div>
+</div>
+</td>
+</tr>
+<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
+<div class="line"><span><span class="needs_user"><span class="needs_label">user: </span><span class="needs_data">danieleades</span></span></span></div>
+<div class="line"><span><span class="needs_created_at"><span class="needs_label">created_at: </span><span class="needs_data">2020-12-23T09:56:51Z</span></span></span></div>
+<div class="line"><span><span class="needs_updated_at"><span class="needs_label">updated_at: </span><span class="needs_data">2021-05-11T19:43:22Z</span></span></span></div>
+<div class="line"><span><span class="needs_closed_at"><span class="needs_label">closed_at: </span><span class="needs_data">2021-05-04T21:02:24Z</span></span></span></div>
+<div class="line"><span><span class="needs_service"><span class="needs_label">service: </span><span class="needs_data">github-issues</span></span></span></div>
+<div class="line"><span><span><span class="needs_label">url: </span><a class="reference external" href="https://github.com/useblocks/sphinxcontrib-needs/issues/164">Link</a></span></span></div>
+</div>
+</td>
+<td class="meta" colspan="3"><div class="needs_meta_right line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_label">type: </span><span class="needs_data">Specification</span></span></span></div>
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">closed</span></span></div>
+</span></span></div>
+<div class="line"><span></span></div>
+</div>
+</td>
+</tr>
+<tr class="content row-odd"><td class="content" colspan="6"><pre><code data-trim data-noescape class="text">what is says on the tin.
+
+see https://github.com/useblocks/sphinxcontrib-
+needs/issues/77#issuecomment-750057106</code></pre>
+</td>
+</tr>
+<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
+<div class="line"><span>layout: <span class="needs_layout"><span class="needs_data">github</span></span></span></div>
+</div>
+</td>
+<td class="footer" colspan="2"><div class="needs_footer line-block">
+<div class="line"><span>service:  <span class="needs_service"><span class="needs_data">github-issues</span></span></span></div>
+</div>
+</td>
+<td class="footer_right" colspan="2"><div class="needs_footer_right line-block">
+<div class="line"><span>style: </span></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="small docutils container">
+<p>Sphinx-Needs documentation: <a class="reference external" href="https://sphinxcontrib-needs.readthedocs.io/en/latest/services/github.html">GitHub service</a></p>
+</div>
+</section>
+<section >
+<h3>Sphinx-Needs-Enterprise</h3>
+<p>Ready to use Ex- and Importers:</p>
+<div class="small docutils container">
+<p>Azure DevOps, codebeamer, Jira, Elasticsearch</p>
+</div>
+<p>Supported targets:</p>
+<div class="small docutils container">
+<p>Documentation build, <code class="docutils literal notranslate"><span class="pre">needs.json</span></code> file</p>
+</div>
+<p><a class="reference external" href="https://useblocks.com/sphinx-needs-enterprise/">Sphinx-Needs Enterprise</a></p>
+</section>
+<section >
+<h3>Sphinx-Needs API</h3>
+<p>Open API, which can be accessed during build to:</p>
+<ul class="simple">
+<li><p>Configure own types and options</p></li>
+<li><p>Add needs (internal and external)</p></li>
+<li><p>Add own warnings</p></li>
+</ul>
+<pre data-id="sphinx-needs-api"><code data-trim data-noescape class="python">for element in my_data:
+    section += add_need(
+        self.env.app, self.state, docname, self.lineno,
+        need_type=&quot;req&quot;, title=element[&quot;title&quot;],
+        id=element[&quot;key&quot;], content=element[&quot;description&quot;])</code></pre>
+<div class="small docutils container">
+<div class="line-block">
+<div class="line">Sphinx-Needs documentation: <a class="reference external" href="https://sphinxcontrib-needs.readthedocs.io/en/latest/api.html">API</a></div>
+<div class="line">Example integration: <a class="reference external" href="https://sphinx-test-reports.readthedocs.io/en/latest/">Sphinx-Test-Reports</a></div>
+</div>
+</div>
+</section>
+</section>
+<section>
+<section >
+<h2>Sphinx Performance</h2>
+</section>
+<section >
+<h3>Executed measurements</h3>
+<a class="reference internal image-reference" href="_images/performance_cores.png"><img alt="_images/performance_cores.png" src="_images/performance_cores.png" style="width: 414.4px; height: 249.89999999999998px;" /></a>
+<a class="reference internal image-reference" href="_images/performance_themes.png"><img alt="_images/performance_themes.png" src="_images/performance_themes.png" style="width: 417.9px; height: 251.29999999999998px;" /></a>
+<div class="small docutils container">
+<p><a class="reference external" href="https://docs.google.com/spreadsheets/d/1vBxxGtU79IL7k92lhiaf17tJl6xs1FGb_OgjVNzgRG0/edit#gid=829814395">Results spreadsheet</a></p>
+</div>
+</section>
+<section >
+<h3>Sphinx-Performance</h3>
+<a class="reference internal image-reference" href="_images/sphinx_performance_showcase.gif"><img alt="_images/sphinx_performance_showcase.gif" src="_images/sphinx_performance_showcase.gif" style="width: 632.5px; height: 450.0px;" /></a>
+<div class="small docutils container">
+<p><a class="reference external" href="https://sphinx-performance.readthedocs.io/en/latest/">Tool Docs</a></p>
+</div>
+</section>
+<section >
+<h3>Sphinx-Needs Profiling</h3>
+<a class="reference internal image-reference" href="_images/snakeviz_needtable.png"><img alt="_images/snakeviz_needtable.png" src="_images/snakeviz_needtable.png" style="width: 810.4000000000001px; height: 406.40000000000003px;" /></a>
+<div class="small docutils container">
+<p><a class="reference external" href="https://sphinxcontrib-needs.readthedocs.io/en/latest/performance/index.html">Sphinx-Needs Performance</a></p>
+</div>
+</section>
+</section>
+<section>
+<section >
+<h2>Sphinx Universe</h2>
+<p>Solutions for engineering related companies.</p>
+<div class="small docutils container">
+<p>Project team size: &gt; 100</p>
+</div>
+</section>
+<section >
+<a class="reference external image-reference" href="https://sphinx-test-reports.readthedocs.io/en/latest/"><img alt="_images/sphinx-test-reports.png" src="_images/sphinx-test-reports.png" style="width: 13%;" /></a>
+<ul class="simple">
+<li><p>Document test results inside Sphinx.</p></li>
+<li><p>Automatically connect results with test cases.</p></li>
+</ul>
+<div class="small docutils container">
+<p>Based on Sphinx-Needs and junit.xml</p>
+</div>
+</section>
+<section >
+<a class="reference external image-reference" href="https://sphinx-collections.readthedocs.io/en/latest/index.html"><img alt="_images/sphinx-collections.png" src="_images/sphinx-collections.png" style="width: 35%;" /></a>
+<p>Collects source files from different sources:</p>
+<div class="small docutils container">
+<ul class="simple">
+<li><p>Git repositories</p></li>
+<li><p>Local folders</p></li>
+<li><p>Jinja templates</p></li>
+<li><p>Functions</p></li>
+</ul>
+</div>
+</section>
+<section >
+<a class="reference external image-reference" href="https://useblocks.com/sphinx-needs-enterprise/"><img alt="_images/sphinx-needs-enterprise.png" src="_images/sphinx-needs-enterprise.png" style="width: 20%;" /></a>
+<p>Im- and Exporter to different systems:</p>
+<div class="small docutils container">
+<ul class="simple">
+<li><p>Azure DevOps</p></li>
+<li><p>Codebeamer</p></li>
+<li><p>Jira</p></li>
+<li><p>ElasticSearch</p></li>
+<li><p>more on request</p></li>
+</ul>
+</div>
+</section>
+<section >
+<h3>Further extensions</h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://sphinx-performance.readthedocs.io/en/latest/">Sphinx Performance</a></p></li>
+<li><p><a class="reference external" href="https://sphinx-bazel.readthedocs.io/en/latest/">Sphinx-Bazel</a> (deprecated)</p></li>
+<li><p><a class="reference external" href="https://tox-envreport.readthedocs.io/en/latest/">tox-envreport</a></p></li>
+</ul>
+</section>
+</section>
+<section>
+<section >
+<h2>Support &amp; Services</h2>
+</section>
+<section >
+<h3>Open-Source Support</h3>
+<div class="small docutils container">
+<table class="colwidths-given ub-list docutils align-default" style="width: 60%">
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 70%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>✅</p></td>
+<td><p>No costs</p></td>
+</tr>
+<tr class="row-even"><td><p>✅ / ⛔ / ⛔</p></td>
+<td><p>Issues / E-Mails / Calls</p></td>
+</tr>
+<tr class="row-odd"><td><p>✅ / ⛔</p></td>
+<td><p>Public / Private discussion</p></td>
+</tr>
+<tr class="row-even"><td><p>🯄</p></td>
+<td><p>Answers in time</p></td>
+</tr>
+<tr class="row-odd"><td><p>⛔</p></td>
+<td><p>Prioritization</p></td>
+</tr>
+<tr class="row-even"><td><p>⛔</p></td>
+<td><p>Implementation guarantee</p></td>
+</tr>
+<tr class="row-odd"><td><p>🯄</p></td>
+<td><p>Process / Domain knowledge</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section >
+<h3>Professional Support</h3>
+<a class="reference external image-reference" href="https://useblocks.com"><img alt="_images/useblocks_logo.png" src="_images/useblocks_logo.png" style="width: 10%;" /></a>
+<div class="small docutils container">
+<table class="colwidths-given ub-list docutils align-default" style="width: 60%">
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 70%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>⛔</p></td>
+<td><p>No costs</p></td>
+</tr>
+<tr class="row-even"><td><p>✅ / ✅ / ✅</p></td>
+<td><p>Issues / E-Mails / Calls</p></td>
+</tr>
+<tr class="row-odd"><td><p>✅ / ✅</p></td>
+<td><p>Public / Private discussion</p></td>
+</tr>
+<tr class="row-even"><td><p>✅</p></td>
+<td><p>Answers in time</p></td>
+</tr>
+<tr class="row-odd"><td><p>✅</p></td>
+<td><p>Prioritization</p></td>
+</tr>
+<tr class="row-even"><td><p>🯄</p></td>
+<td><div class="line-block">
+<div class="line">Implementation guarantee</div>
+<div class="line">(as fork ✅)</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>✅</p></td>
+<td><p>Process / Domain knowledge</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section >
+<h3>Professional Services</h3>
+<a class="reference external image-reference" href="https://useblocks.com"><img alt="_images/useblocks_logo.png" src="_images/useblocks_logo.png" style="width: 10%;" /></a>
+<div class="small docutils container">
+<ul class="simple">
+<li><p>Tool Development</p></li>
+<li><p>Tool rollout (CI / CD)</p></li>
+<li><p>Process Consulting</p></li>
+<li><p>Process &amp; Tools Trainings</p></li>
+<li><p>Open-Source Transformation of in-house solutions</p></li>
+<li><p>Open-Source Project gardening</p></li>
+</ul>
+</div>
+</section>
+<section >
+<h3>Professional Trainings</h3>
+<a class="reference external image-reference" href="https://useblocks.com"><img alt="_images/useblocks_logo.png" src="_images/useblocks_logo.png" style="width: 10%;" /></a>
+<div class="small docutils container">
+<ul class="simple">
+<li><p>Docs-as-Code</p></li>
+<li><p>Sphinx</p></li>
+<li><p>Sphinx-Needs</p>
+<ul>
+<li><p>Features</p></li>
+<li><p>Development / API</p></li>
+<li><p>Processes (company specific)</p></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+</section>
+<section>
+<section >
+<h2>(Cloud) Services</h2>
+<img alt="_images/cloud.png" src="_images/cloud.png" />
+</section>
+<section >
+<h3>GitHub</h3>
+<ul class="simple">
+<li><p>Store code and files with git</p></li>
+<li><p>Get issue tracker, wiki, website and more</p></li>
+<li><p>Automatically interacts with hundreds of other web services</p></li>
+<li><p>Free for open-source projects</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="small docutils container">
+<p>Link: <a class="reference external" href="https://github.com/">github.com</a></p>
+</div>
+</section>
+<section >
+<h3>Read the docs</h3>
+<ul class="simple">
+<li><p>Builds, deploys and hosts sphinx documentations</p></li>
+<li><p>Gets triggered by changes on github</p></li>
+<li><p>Free for open-source projects</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="small docutils container">
+<p>Link: <a class="reference external" href="https://readthedocs.org/">readthedocs.org</a></p>
+</div>
+</section>
+<section >
+<h3>Artifactory</h3>
+<ul class="simple">
+<li><p>Archiving releases, binaries and co.</p></li>
+<li><p>Multiple Archive types: PyPi, NPM, Generic</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="small docutils container">
+<p>Link: <a class="reference external" href="https://jfrog.com/artifactory/">Artifactory</a></p>
+</div>
+</section>
+</section>
+<section>
+<section >
+<h2>Thanks for your attention …</h2>
+</section>
+<section >
+<p><strong>… and see you on DWF’s issue tracker :)</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>github</p></td>
+<td><p><a class="reference external" href="https://github.com/useblocks/dwf">github.com/useblocks/dwf</a></p></td>
+</tr>
+<tr class="row-even"><td><p>This presentation</p></td>
+<td><p><a class="reference external" href="https://useblocks.com/dwf">useblocks.com/dwf</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section >
+<h3>Maintainer</h3>
+<p><strong>Daniel Woste</strong></p>
+<a class="reference external image-reference" href="http://useblocks.com"><img alt="_images/daniel_woste.png" src="_images/daniel_woste.png" style="width: 128.0px; height: 128.0px;" /></a>
+<a class="reference external image-reference" href="http://useblocks.com"><img alt="_images/useblocks_logo.png" src="_images/useblocks_logo.png" style="width: 130.52px; height: 128.70000000000002px;" /></a>
+</section>
+<section >
+<h3>LICENSE</h3>
+<pre data-id="license"><code data-trim data-noescape class="txt">Presentation and Documentation
+==============================
+
+Creative Common 4.0 International
+
+https://creativecommons.org/licenses/by/4.0/legalcode
+
+Copyright (c) 2016-2017 useblocks GmbH
+
+Creative Commons Attribution 4.0 International Public License
+
+By exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution 4.0 International Public License (&quot;Public License&quot;). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.
+
+Section 1 – Definitions.
+
+Adapted Material means material subject to Copyright and Similar Rights that is derived from or based upon the Licensed Material and in which the Licensed Material is translated, altered, arranged, transformed, or otherwise modified in a manner requiring permission under the Copyright and Similar Rights held by the Licensor. For purposes of this Public License, where the Licensed Material is a musical work, performance, or sound recording, Adapted Material is always produced where the Licensed Material is synched in timed relation with a moving image.
+Adapter's License means the license You apply to Your Copyright and Similar Rights in Your contributions to Adapted Material in accordance with the terms and conditions of this Public License.
+Copyright and Similar Rights means copyright and/or similar rights closely related to copyright including, without limitation, performance, broadcast, sound recording, and Sui Generis Database Rights, without regard to how the rights are labeled or categorized. For purposes of this Public License, the rights specified in Section 2(b)(1)-(2) are not Copyright and Similar Rights.
+Effective Technological Measures means those measures that, in the absence of proper authority, may not be circumvented under laws fulfilling obligations under Article 11 of the WIPO Copyright Treaty adopted on December 20, 1996, and/or similar international agreements.
+Exceptions and Limitations means fair use, fair dealing, and/or any other exception or limitation to Copyright and Similar Rights that applies to Your use of the Licensed Material.
+Licensed Material means the artistic or literary work, database, or other material to which the Licensor applied this Public License.
+Licensed Rights means the rights granted to You subject to the terms and conditions of this Public License, which are limited to all Copyright and Similar Rights that apply to Your use of the Licensed Material and that the Licensor has authority to license.
+Licensor means the individual(s) or entity(ies) granting rights under this Public License.
+Share means to provide material to the public by any means or process that requires permission under the Licensed Rights, such as reproduction, public display, public performance, distribution, dissemination, communication, or importation, and to make material available to the public including in ways that members of the public may access the material from a place and at a time individually chosen by them.
+Sui Generis Database Rights means rights other than copyright resulting from Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996 on the legal protection of databases, as amended and/or succeeded, as well as other essentially equivalent rights anywhere in the world.
+You means the individual or entity exercising the Licensed Rights under this Public License. Your has a corresponding meaning.
+Section 2 – Scope.
+
+License grant.
+Subject to the terms and conditions of this Public License, the Licensor hereby grants You a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the Licensed Material to:
+reproduce and Share the Licensed Material, in whole or in part; and
+produce, reproduce, and Share Adapted Material.
+Exceptions and Limitations. For the avoidance of doubt, where Exceptions and Limitations apply to Your use, this Public License does not apply, and You do not need to comply with its terms and conditions.
+Term. The term of this Public License is specified in Section 6(a).
+Media and formats; technical modifications allowed. The Licensor authorizes You to exercise the Licensed Rights in all media and formats whether now known or hereafter created, and to make technical modifications necessary to do so. The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications necessary to exercise the Licensed Rights, including technical modifications necessary to circumvent Effective Technological Measures. For purposes of this Public License, simply making modifications authorized by this Section 2(a)(4) never produces Adapted Material.
+Downstream recipients.
+Offer from the Licensor – Licensed Material. Every recipient of the Licensed Material automatically receives an offer from the Licensor to exercise the Licensed Rights under the terms and conditions of this Public License.
+No downstream restrictions. You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, the Licensed Material if doing so restricts exercise of the Licensed Rights by any recipient of the Licensed Material.
+No endorsement. Nothing in this Public License constitutes or may be construed as permission to assert or imply that You are, or that Your use of the Licensed Material is, connected with, or sponsored, endorsed, or granted official status by, the Licensor or others designated to receive attribution as provided in Section 3(a)(1)(A)(i).
+Other rights.
+
+Moral rights, such as the right of integrity, are not licensed under this Public License, nor are publicity, privacy, and/or other similar personality rights; however, to the extent possible, the Licensor waives and/or agrees not to assert any such rights held by the Licensor to the limited extent necessary to allow You to exercise the Licensed Rights, but not otherwise.
+Patent and trademark rights are not licensed under this Public License.
+To the extent possible, the Licensor waives any right to collect royalties from You for the exercise of the Licensed Rights, whether directly or through a collecting society under any voluntary or waivable statutory or compulsory licensing scheme. In all other cases the Licensor expressly reserves any right to collect such royalties.
+Section 3 – License Conditions.
+
+Your exercise of the Licensed Rights is expressly made subject to the following conditions.
+
+Attribution.
+
+If You Share the Licensed Material (including in modified form), You must:
+
+retain the following if it is supplied by the Licensor with the Licensed Material:
+identification of the creator(s) of the Licensed Material and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated);
+a copyright notice;
+a notice that refers to this Public License;
+a notice that refers to the disclaimer of warranties;
+a URI or hyperlink to the Licensed Material to the extent reasonably practicable;
+indicate if You modified the Licensed Material and retain an indication of any previous modifications; and
+indicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or hyperlink to, this Public License.
+You may satisfy the conditions in Section 3(a)(1) in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.
+If requested by the Licensor, You must remove any of the information required by Section 3(a)(1)(A) to the extent reasonably practicable.
+If You Share Adapted Material You produce, the Adapter's License You apply must not prevent recipients of the Adapted Material from complying with this Public License.
+Section 4 – Sui Generis Database Rights.
+
+Where the Licensed Rights include Sui Generis Database Rights that apply to Your use of the Licensed Material:
+
+for the avoidance of doubt, Section 2(a)(1) grants You the right to extract, reuse, reproduce, and Share all or a substantial portion of the contents of the database;
+if You include all or a substantial portion of the database contents in a database in which You have Sui Generis Database Rights, then the database in which You have Sui Generis Database Rights (but not its individual contents) is Adapted Material; and
+You must comply with the conditions in Section 3(a) if You Share all or a substantial portion of the contents of the database.
+For the avoidance of doubt, this Section 4 supplements and does not replace Your obligations under this Public License where the Licensed Rights include other Copyright and Similar Rights.
+Section 5 – Disclaimer of Warranties and Limitation of Liability.
+
+Unless otherwise separately undertaken by the Licensor, to the extent possible, the Licensor offers the Licensed Material as-is and as-available, and makes no representations or warranties of any kind concerning the Licensed Material, whether express, implied, statutory, or other. This includes, without limitation, warranties of title, merchantability, fitness for a particular purpose, non-infringement, absence of latent or other defects, accuracy, or the presence or absence of errors, whether or not known or discoverable. Where disclaimers of warranties are not allowed in full or in part, this disclaimer may not apply to You.
+To the extent possible, in no event will the Licensor be liable to You on any legal theory (including, without limitation, negligence) or otherwise for any direct, special, indirect, incidental, consequential, punitive, exemplary, or other losses, costs, expenses, or damages arising out of this Public License or use of the Licensed Material, even if the Licensor has been advised of the possibility of such losses, costs, expenses, or damages. Where a limitation of liability is not allowed in full or in part, this limitation may not apply to You.
+The disclaimer of warranties and limitation of liability provided above shall be interpreted in a manner that, to the extent possible, most closely approximates an absolute disclaimer and waiver of all liability.
+Section 6 – Term and Termination.
+
+This Public License applies for the term of the Copyright and Similar Rights licensed here. However, if You fail to comply with this Public License, then Your rights under this Public License terminate automatically.
+Where Your right to use the Licensed Material has terminated under Section 6(a), it reinstates:
+
+automatically as of the date the violation is cured, provided it is cured within 30 days of Your discovery of the violation; or
+upon express reinstatement by the Licensor.
+For the avoidance of doubt, this Section 6(b) does not affect any right the Licensor may have to seek remedies for Your violations of this Public License.
+For the avoidance of doubt, the Licensor may also offer the Licensed Material under separate terms or conditions or stop distributing the Licensed Material at any time; however, doing so will not terminate this Public License.
+Sections 1, 5, 6, 7, and 8 survive termination of this Public License.
+Section 7 – Other Terms and Conditions.
+
+The Licensor shall not be bound by any additional or different terms or conditions communicated by You unless expressly agreed.
+Any arrangements, understandings, or agreements regarding the Licensed Material not stated herein are separate from and independent of the terms and conditions of this Public License.
+Section 8 – Interpretation.
+
+For the avoidance of doubt, this Public License does not, and shall not be interpreted to, reduce, limit, restrict, or impose conditions on any use of the Licensed Material that could lawfully be made without permission under this Public License.
+To the extent possible, if any provision of this Public License is deemed unenforceable, it shall be automatically reformed to the minimum extent necessary to make it enforceable. If the provision cannot be reformed, it shall be severed from this Public License without affecting the enforceability of the remaining terms and conditions.
+No term or condition of this Public License will be waived and no failure to comply consented to unless expressly agreed to by the Licensor.
+Nothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority.
+
+Software
+========
+
+MIT License
+
+Copyright (c) 2016-2017 useblocks GmbH
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</code></pre>
+</section>
+</section>
+
+        </div>
+    </div>
+    
+    <script src="_static/revealjs4/dist/reveal.js"></script>
+    
+    
+      <script src="_static/revealjs4/plugin/notes/notes.js"></script>
+      
+    
+    <script>
+        var revealjsConfig = new Object();
+        Object.assign(revealjsConfig, 
+{
+    controls: true,
+    transition: 'slide',
+    progress: true,
+    history: true,
+    keyboard: true,
+    preloadIframes: true,
+}
+);
+        
+        
+        
+          revealjsConfig.plugins = [
+            RevealNotes,
+          ];
+        
+        // More info https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize(revealjsConfig);
+    </script>
+
+  </body>
+</html>

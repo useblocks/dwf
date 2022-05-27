@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="232px" preserveAspectRatio="none" style="width:360px;height:232px;" version="1.1" viewBox="0 0 360 232" width="360px" zoomAndPan="magnify"><defs><filter height="300%" id="fp5jv88" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--entity US_003--><a target="_top" xlink:actuate="onRequest" xlink:href="../index.html#US_003" xlink:show="new" xlink:title="../index.html#US_003" xlink:type="simple"><polygon fill="#BFD8D2" filter="url(#fp5jv88)" points="6,166,16,156,170,156,170,217.9063,160,227.9063,6,227.9063,6,166" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="160" x2="169" y1="166" y2="157"/><line style="stroke: #000000; stroke-width: 1.5;" x1="6" x2="160" y1="166" y2="166"/><line style="stroke: #000000; stroke-width: 1.5;" x1="160" x2="160" y1="166" y2="227.9063"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="65" x="21" y="187.1387">User Story</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="124" x="21" y="202.9639">Layout example</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="38" x="21" y="215.5479">US_003</text></a><!--entity US_004--><a target="_top" xlink:actuate="onRequest" xlink:href="../index.html#US_004" xlink:show="new" xlink:title="../index.html#US_004" xlink:type="simple"><polygon fill="#BFD8D2" filter="url(#fp5jv88)" points="205,166,215,156,355,156,355,217.9063,345,227.9063,205,227.9063,205,166" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="345" x2="354" y1="166" y2="157"/><line style="stroke: #000000; stroke-width: 1.5;" x1="205" x2="345" y1="166" y2="166"/><line style="stroke: #000000; stroke-width: 1.5;" x1="345" x2="345" y1="166" y2="227.9063"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="65" x="220" y="187.1387">User Story</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="110" x="220" y="202.9639">Style example</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="38" x="220" y="215.5479">US_004</text></a><!--entity TEMPL_POST_SPEC--><a target="_top" xlink:actuate="onRequest" xlink:href="../index.html#TEMPL_POST_SPEC" xlink:show="new" xlink:title="../index.html#TEMPL_POST_SPEC" xlink:type="simple"><polygon fill="#FEDCD2" filter="url(#fp5jv88)" points="114,18,124,8,254,8,254,86.2031,244,96.2031,114,96.2031,114,18" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="244" x2="253" y1="18" y2="9"/><line style="stroke: #000000; stroke-width: 1.5;" x1="114" x2="244" y1="18" y2="18"/><line style="stroke: #000000; stroke-width: 1.5;" x1="244" x2="244" y1="18" y2="96.2031"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="80" x="129" y="39.1387">Specification</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="22" x="129" y="54.9639">My</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="100" x="129" y="71.2607">specification</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="100" x="129" y="83.8447">TEMPL_POST_SPEC</text></a><path d="M153.89,96.29 C141.62,113.92 127.53,134.17 115.54,151.41 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="112.54,155.72,120.9674,150.623,115.3987,151.6178,114.4039,146.0491,112.54,155.72" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M214.11,96.29 C226.38,113.92 240.47,134.17 252.46,151.41 " fill="none" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="255.46,155.72,253.5961,146.0491,252.6013,151.6178,247.0326,150.623,255.46,155.72" style="stroke: #A80036; stroke-width: 1.0;"/><!--
+@startuml
+
+' Nodes definition 
+
+node "<size:12>User Story</size>\n**Layout example**\n<size:10>US_003</size>" as US_003 [[../index.html#US_003]] #BFD8D2 
+node "<size:12>User Story</size>\n**Style example**\n<size:10>US_004</size>" as US_004 [[../index.html#US_004]] #BFD8D2 
+node "<size:12>Specification</size>\n**My**\n**specification**\n<size:10>TEMPL_POST_SPEC</size>" as TEMPL_POST_SPEC [[../index.html#TEMPL_POST_SPEC]] #FEDCD2 
+
+' Connection definition 
+
+TEMPL_POST_SPEC - -> US_003
+TEMPL_POST_SPEC - -> US_004
+
+@enduml
+
+PlantUML version 2017.10(Thu Apr 06 18:43:00 UTC 2017)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.15+10
+Operating System: Linux
+OS Version: 5.13.0-1022-azure
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>
